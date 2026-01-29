@@ -58,12 +58,13 @@ CREATE SEQUENCE SEQ_DROPOUT
 START WITH 3
 NOCACHE;
 
-
 -- 성적 코드
 CREATE SEQUENCE GR_SEQ
 INCREMENT BY 1
 START WITH 1
 NOCACHE;
+
+
 --------------------------------------------------------------------------------
 
 
@@ -1432,11 +1433,15 @@ BEGIN
     V_LOGIN_ID := SUBSTR(P_LOGIN_ID,1,2);
     
     IF (V_LOGIN_ID = 'PF') THEN
+        -- 오늘 날짜와 과목의 종료 날짜를 비교해서 
+        -- SYSDATE보다 종료날짜가 이전인 것들만 생성 가능하게 설정
+
          -- 중도탈락자가 아니면서 교수자의 과목인 컬럼들 
         FOR REC IN ( SELECT OS.OS_CODE, ER.ER_CODE, OS.OS_EDATE
                      FROM OPEN_SUB OS JOIN ENROLLMENT ER
                         ON ER.OC_CODE = OS.OC_CODE
                      WHERE OS.PF_ID = P_LOGIN_ID
+                        AND OS.OS_EDATE <= TRUNC(SYSDATE)
                         AND NOT EXISTS( SELECT 1
                                         FROM DROP_OUT DO 
                                         WHERE DO.ER_CODE = ER.ER_CODE
@@ -1487,16 +1492,27 @@ IS
     V_OC_CODE           ENROLLMENT.OC_CODE%TYPE;
     V_FLAG              BOOLEAN:= FALSE;
     V_CNT               NUMBER;
+    V_EDATE             DATE;
     
     USER_DEFINE_ERROR1  EXCEPTION;
     USER_DEFINE_ERROR2  EXCEPTION;
     USER_DEFINE_ERROR3  EXCEPTION;
     USER_DEFINE_ERROR4  EXCEPTION;
     USER_DEFINE_ERROR5  EXCEPTION;
+    USER_DEFINE_ERROR6  EXCEPTION;
 BEGIN
      V_LOGIN_ID := SUBSTR(P_LOGIN_ID,1,2);
     
     IF (V_LOGIN_ID = 'AD') THEN
+    
+        -- 과목 종료일 체크
+        SELECT OS_EDATE INTO V_EDATE
+        FROM OPEN_SUB
+        WHERE OS_CODE = P_OS_CODE;
+    
+        IF (V_EDATE > TRUNC(SYSDATE))   THEN
+            RAISE USER_DEFINE_ERROR6;
+        END IF;
 
          -- 성적테이블에 중복데이터 존재 시 예외처리
         SELECT COUNT(*) INTO V_DUP_CNT
@@ -1593,6 +1609,8 @@ BEGIN
             RAISE_APPLICATION_ERROR(-20011, '중도탈락한 학생입니다.');
         WHEN USER_DEFINE_ERROR5 THEN
             RAISE_APPLICATION_ERROR(-20012, '유효한 개설과목이 존재하지 않습니다.');
+        WHEN USER_DEFINE_ERROR6 THEN
+            RAISE_APPLICATION_ERROR(-20100, '선택한 과목은 종료되지 않았습니다.');  
 END;
 
 CREATE OR REPLACE PROCEDURE PRC_GR_U

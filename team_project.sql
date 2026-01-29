@@ -84,3 +84,67 @@ CREATE TABLE DROP_REASON
 
 
 
+
+
+SELECT *
+FROM PROF;
+
+SELECT *
+FROM OPEN_SUB;
+
+SELECT *
+FROM GRADE;
+
+SELECT *
+FROM ENROLLMENT;
+
+EXEC PRC_GR_C_PF('PF101');
+
+SELECT *
+FROM GRADE
+WHERE GR_CODE IN ('GR001', 'GR002');
+
+DELETE
+FROM GRADE
+WHERE GR_CODE IN ('GR001', 'GR002');
+
+SELECT *
+FROM GRADE;
+
+COMMIT;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
