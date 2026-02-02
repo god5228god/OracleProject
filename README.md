@@ -6,7 +6,7 @@
    ORACLE DataBase
    SQL, PL/SQL
 ## ERD
-![ERD](./docs/erd.png)
+![ERD](erd.png)
 
 
 
