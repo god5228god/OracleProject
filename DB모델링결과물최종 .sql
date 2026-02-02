@@ -1,7 +1,7 @@
--- Å×ÀÌºí »ý¼º ½ÇÇà -------------------------------------------------------
---¡Û Å×ÀÌºí »ý¼º
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: PROF
+-- í…Œì´ë¸” ìƒì„± ì‹¤í–‰ -------------------------------------------------------
+--â—‹ í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: PROF
 CREATE TABLE PROF
 ( PF_ID     VARCHAR2(20)      
 , PF_NAME   VARCHAR2(20)    CONSTRAINT  PF_PF_NAME_NN  NOT NULL
@@ -13,11 +13,11 @@ CREATE TABLE PROF
 , CONSTRAINT PF_PF_PW_CK CHECK (LENGTH(PF_PW) BETWEEN 7 AND 12)
 , CONSTRAINT PF_PF_SSN_CK CHECK (LENGTH(PF_SSN) = 14)
 );
---==>> Table PROFÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table PROFì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: STUD
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: STUD
 CREATE TABLE STUD
 ( ST_ID     VARCHAR2(20)
 , ST_PW     VARCHAR2(20)    CONSTRAINT ST_ST_PW_NN NOT NULL
@@ -29,71 +29,71 @@ CREATE TABLE STUD
 , CONSTRAINT ST_ST_PW_CK CHECK (LENGTH(ST_PW) BETWEEN 7 AND 12)
 , CONSTRAINT ST_ST_SSN_CK CHECK (LENGTH(ST_SSN) = 14)
 );
---==>> Table STUDÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table STUDì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: COURSE
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: COURSE
 CREATE TABLE COURSE
 ( CR_CODE   VARCHAR2(10)    
 , CR_NAME   VARCHAR2(100)    CONSTRAINT CR_CR_NAME_NN NOT NULL
 , CONSTRAINT CR_CR_CODE_PK PRIMARY KEY(CR_CODE)
 );
---==>>Table COURSEÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>>Table COURSEì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: SUB
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: SUB
 CREATE TABLE SUB
 ( SUB_CODE  VARCHAR2(10)    
 , SUB_NAME  VARCHAR2(100)    CONSTRAINT SUB_SUB_NAME_NN NOT NULL
 , CONSTRAINT SUB_SUB_CODE_PK  PRIMARY KEY(SUB_CODE)
 );
---==>> Table SUBÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table SUBì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: TEXTBOOK
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: TEXTBOOK
 CREATE TABLE TEXTBOOK
 ( TB_CODE   VARCHAR2(10)    
 , TB_NAME   VARCHAR2(100)    CONSTRAINT TB_TB_NAME_NN  NOT NULL
 , CONSTRAINT TB_TB_CODE_PK PRIMARY KEY(TB_CODE)
 );
---==>> Table TEXTBOOKÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table TEXTBOOKì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: CLASS
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: CLASS
 CREATE TABLE CLASS
 ( CL_CODE   VARCHAR2(20)
 , CL_NAME   VARCHAR2(20)    CONSTRAINT CL_CL_NAME_NN NOT NULL
 , CONSTRAINT CL_CL_CODE_PK PRIMARY KEY(CL_CODE)
 );
---==>> Table CLASSÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table CLASSì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: ADMIN_ROLE
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: ADMIN_ROLE
 CREATE TABLE ADMIN_ROLE
 ( AR_CODE   VARCHAR2(10)
 , AR_NAME   VARCHAR2(20)    CONSTRAINT AR_AR_NAME_NN NOT NULL
 , CONSTRAINT AR_AR_CODE_PK PRIMARY KEY(AR_CODE)
 );
---==>> Table ADMIN_ROLEÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table ADMIN_ROLEì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: DROP_REASON
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: DROP_REASON
 CREATE TABLE DROP_REASON
 ( DR_CODE   VARCHAR2(10)
 , DR_REASON VARCHAR2(20)    CONSTRAINT DR_DR_REASON_NN NOT NULL
 , CONSTRAINT DR_DR_CODE_PK PRIMARY KEY(DR_CODE)
 );
---==>> Table DROP_REASONÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table DROP_REASONì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: ADMIN
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: ADMIN
 CREATE TABLE ADMIN
 (
   AD_ID      VARCHAR2(20)  CONSTRAINT AD_AD_ID_NN NOT NULL
@@ -109,11 +109,11 @@ CREATE TABLE ADMIN
 , CONSTRAINT AD_AD_PW_CK CHECK (LENGTH(AD_PW) BETWEEN 7 AND 12)
 , CONSTRAINT AD_AD_SSN_CK CHECK (LENGTH(AD_SSN) = 14)
 );
---==>> Table ADMINÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table ADMINì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: OPEN_COURSE
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: OPEN_COURSE
 CREATE TABLE OPEN_COURSE
 (
  OC_CODE    VARCHAR2(10)  CONSTRAINT OC_OC_CODE_NN NOT NULL  
@@ -129,11 +129,11 @@ CREATE TABLE OPEN_COURSE
             REFERENCES CLASS(CL_CODE)
 ,CONSTRAINT OC_OC_DATE_CK CHECK(OC_SDATE <= OC_EDATE)
 );
---==>> Table ADMINÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table ADMINì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: OPEN_SUB
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: OPEN_SUB
 CREATE TABLE OPEN_SUB
 (
  OS_CODE    VARCHAR2(10)  CONSTRAINT OS_OS_CODE_NN NOT NULL
@@ -163,12 +163,12 @@ CREATE TABLE OPEN_SUB
 , CONSTRAINT OS_OS_DATE_CK CHECK(OS_SDATE <= OS_EDATE)
 , CONSTRAINT OS_SUM_WEIGHT_CK CHECK(ATT_WEIGHT + WRT_WEIGHT + PRC_WEIGHT = 100)
 );
---==>> Table OPEN_SUBÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table OPEN_SUBì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: ENROLLMENT
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: ENROLLMENT
 CREATE TABLE ENROLLMENT
 (
  ER_CODE    VARCHAR2(10)    CONSTRAINT ER_ER_CODE_NN NOT NULL
@@ -182,11 +182,11 @@ CREATE TABLE ENROLLMENT
             REFERENCES STUD(ST_ID)
 ,CONSTRAINT ER_OC_ST_CUK UNIQUE(OC_CODE,ST_ID)
 );
---==>> Table ENROLLMENTÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table ENROLLMENTì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: DROP_OUT
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: DROP_OUT
 CREATE TABLE DROP_OUT
 (
  DO_CODE    VARCHAR2(10)    CONSTRAINT DO_OUT_DO_CODE_NN NOT NULL
@@ -200,11 +200,11 @@ CREATE TABLE DROP_OUT
             REFERENCES DROP_REASON(DR_CODE)
 , CONSTRAINT DO_ER_CODE_UK UNIQUE(ER_CODE)
 );
---==>> Table DROP_OUTÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>> Table DROP_OUTì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
--- Å×ÀÌºí »ý¼º
--- Å×ÀÌºí¸í: GRADE
+-- í…Œì´ë¸” ìƒì„±
+-- í…Œì´ë¸”ëª…: GRADE
 CREATE TABLE GRADE
 (
  GR_CODE    VARCHAR2(10)    CONSTRAINT GR_GR_CODE_NN NOT NULL
@@ -221,110 +221,110 @@ CREATE TABLE GRADE
             REFERENCES OPEN_SUB(OS_CODE)
 ,CONSTRAINT GR_ER_OS_CUK UNIQUE(ER_CODE,OS_CODE)
 );
---==>>Table GRADEÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--==>>Table GRADEì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 --------------------------------------------------------------------------------
--- ½ÃÄö½º »ý¼º ½ÇÇà -------------------------------------------------------
--- ½ÃÄö½º »ý¼º
--- ±³¼öÀÚ ID
+-- ì‹œí€€ìŠ¤ ìƒì„± ì‹¤í–‰ -------------------------------------------------------
+-- ì‹œí€€ìŠ¤ ìƒì„±
+-- êµìˆ˜ìž ID
 CREATE SEQUENCE PROF_SEQ
 START WITH 100
 NOCACHE;
 
--- °³¼³ °úÁ¤ ÄÚµå
+-- ê°œì„¤ ê³¼ì • ì½”ë“œ
 CREATE SEQUENCE OC_SEQ
 START WITH 1
 NOCACHE;
 
--- ¼ö°­½ÅÃ» ÄÚµå 
+-- ìˆ˜ê°•ì‹ ì²­ ì½”ë“œ 
 CREATE SEQUENCE ER_SEQ
 START WITH 7
 NOCACHE;
 
 
--- °ü¸®ÀÚ ID
+-- ê´€ë¦¬ìž ID
 CREATE SEQUENCE SEQ_ADMIN
 START WITH 100
 NOCACHE;
 
--- ÇÐ»ý ID 
+-- í•™ìƒ ID 
 CREATE SEQUENCE ST_SEQ
 INCREMENT BY 1
 START WITH 100
 NOCACHE;
 
--- °ü¸®ÀÚ °³¼³°ú¸ñ µî·Ï
+-- ê´€ë¦¬ìž ê°œì„¤ê³¼ëª© ë“±ë¡
 CREATE SEQUENCE SEQ_OPEN_SUB
 START WITH 1
 NOCACHE;
 
--- ÁßµµÅ»¶ô ÄÚµå
+-- ì¤‘ë„íƒˆë½ ì½”ë“œ
 CREATE SEQUENCE SEQ_DROPOUT
 START WITH 3
 NOCACHE;
 
--- ¼ºÀû ÄÚµå
+-- ì„±ì  ì½”ë“œ
 CREATE SEQUENCE GR_SEQ
 INCREMENT BY 1
 START WITH 1
 NOCACHE;
 
--- »ùÇÃµ¥ÀÌÅÍ ¸ðµÎ »ý¼º----------------------------------------------------
+-- ìƒ˜í”Œë°ì´í„° ëª¨ë‘ ìƒì„±----------------------------------------------------
 
---¡Û »ùÇÃ µ¥ÀÌÅÍ
-INSERT INTO PROF (PF_ID, PF_NAME, PF_SSN, PF_PW, PF_DATE) VALUES ('PF100', '°­±³¼ö', '660222-1567422', '7654321', TO_DATE('2010-12-01', 'YYYY-MM-DD'));
-INSERT INTO PROF (PF_ID, PF_NAME, PF_SSN, PF_PW, PF_DATE) VALUES ('PF101', '±è±³¼ö', '700333-2933325', '1231234', TO_DATE('2011-01-26', 'YYYY-MM-DD'));
+--â—‹ ìƒ˜í”Œ ë°ì´í„°
+INSERT INTO PROF (PF_ID, PF_NAME, PF_SSN, PF_PW, PF_DATE) VALUES ('PF100', 'ê°•êµìˆ˜', '660222-1567422', '7654321', TO_DATE('2010-12-01', 'YYYY-MM-DD'));
+INSERT INTO PROF (PF_ID, PF_NAME, PF_SSN, PF_PW, PF_DATE) VALUES ('PF101', 'ê¹€êµìˆ˜', '700333-2933325', '1231234', TO_DATE('2011-01-26', 'YYYY-MM-DD'));
 
--- 2. STUD (ÇÐ»ý)
-INSERT INTO STUD (ST_ID, ST_PW, ST_NAME, ST_SSN, ST_DATE) VALUES ('ST111', '1234567', 'È«±æµ¿', '770126-1234456', TO_DATE('2024-12-01', 'YYYY-MM-DD'));
-INSERT INTO STUD (ST_ID, ST_PW, ST_NAME, ST_SSN, ST_DATE) VALUES ('ST112', '2345671', '°íÀ±Á¤', '971208-2345671', TO_DATE('2023-11-08', 'YYYY-MM-DD'));
-INSERT INTO STUD (ST_ID, ST_PW, ST_NAME, ST_SSN, ST_DATE) VALUES ('ST113', '3456781', 'ÀÌ¼±È£', '000904-3123456', TO_DATE('2022-11-09', 'YYYY-MM-DD'));
+-- 2. STUD (í•™ìƒ)
+INSERT INTO STUD (ST_ID, ST_PW, ST_NAME, ST_SSN, ST_DATE) VALUES ('ST111', '1234567', 'í™ê¸¸ë™', '770126-1234456', TO_DATE('2024-12-01', 'YYYY-MM-DD'));
+INSERT INTO STUD (ST_ID, ST_PW, ST_NAME, ST_SSN, ST_DATE) VALUES ('ST112', '2345671', 'ê³ ìœ¤ì •', '971208-2345671', TO_DATE('2023-11-08', 'YYYY-MM-DD'));
+INSERT INTO STUD (ST_ID, ST_PW, ST_NAME, ST_SSN, ST_DATE) VALUES ('ST113', '3456781', 'ì´ì„ í˜¸', '000904-3123456', TO_DATE('2022-11-09', 'YYYY-MM-DD'));
 
--- 3. COURSE (°úÁ¤¸í)
-INSERT INTO COURSE (CR_CODE, CR_NAME) VALUES ('CR001', 'ÀÚ¹Ù Ç®½ºÅÃ');
-INSERT INTO COURSE (CR_CODE, CR_NAME) VALUES ('CR002', 'ÇÁ·ÐÆ®¿£µå');
+-- 3. COURSE (ê³¼ì •ëª…)
+INSERT INTO COURSE (CR_CODE, CR_NAME) VALUES ('CR001', 'ìžë°” í’€ìŠ¤íƒ');
+INSERT INTO COURSE (CR_CODE, CR_NAME) VALUES ('CR002', 'í”„ë¡ íŠ¸ì—”ë“œ');
 
 
--- 4. SUB (°ú¸ñ¸í)
-INSERT INTO SUB (SUB_CODE, SUB_NAME) VALUES ('SUB001', 'ÀÚ¹Ù');
+-- 4. SUB (ê³¼ëª©ëª…)
+INSERT INTO SUB (SUB_CODE, SUB_NAME) VALUES ('SUB001', 'ìžë°”');
 INSERT INTO SUB (SUB_CODE, SUB_NAME) VALUES ('SUB002', 'SQL');
 
--- 5. TEXTBOOK (±³Àç)
-INSERT INTO TEXTBOOK (TB_CODE, TB_NAME) VALUES ('TB001', '½ºÇÁ¸µ ÀÎ ¾×¼Ç');
-INSERT INTO TEXTBOOK (TB_CODE, TB_NAME) VALUES ('TB002', 'À¥ ÇÁ·Î±×·¡¹Ö ÀÔ¹®');
-INSERT INTO TEXTBOOK (TB_CODE, TB_NAME) VALUES ('TB003', 'µ¥ÀÌÅÍº£ÀÌ½º ÀÔ¹®');
+-- 5. TEXTBOOK (êµìž¬)
+INSERT INTO TEXTBOOK (TB_CODE, TB_NAME) VALUES ('TB001', 'ìŠ¤í”„ë§ ì¸ ì•¡ì…˜');
+INSERT INTO TEXTBOOK (TB_CODE, TB_NAME) VALUES ('TB002', 'ì›¹ í”„ë¡œê·¸ëž˜ë° ìž…ë¬¸');
+INSERT INTO TEXTBOOK (TB_CODE, TB_NAME) VALUES ('TB003', 'ë°ì´í„°ë² ì´ìŠ¤ ìž…ë¬¸');
 INSERT INTO TEXTBOOK (TB_CODE, TB_NAME) VALUES ('TB004', 'VUE.JS 3');
 
--- 6. CLASS (°­ÀÇ½Ç)
-INSERT INTO CLASS (CL_CODE, CL_NAME) VALUES ('CL001', 'A°­ÀÇ½Ç');
-INSERT INTO CLASS (CL_CODE, CL_NAME) VALUES ('CL002', 'B°­ÀÇ½Ç');
+-- 6. CLASS (ê°•ì˜ì‹¤)
+INSERT INTO CLASS (CL_CODE, CL_NAME) VALUES ('CL001', 'Aê°•ì˜ì‹¤');
+INSERT INTO CLASS (CL_CODE, CL_NAME) VALUES ('CL002', 'Bê°•ì˜ì‹¤');
 
 
--- 7. ADMIN_ROLE (°ü¸®ÀÚ±ÇÇÑ)
-INSERT INTO ADMIN_ROLE (AR_CODE, AR_NAME) VALUES ('AR001', 'ÃÖ°í°ü¸®ÀÚ');
-INSERT INTO ADMIN_ROLE (AR_CODE, AR_NAME) VALUES ('AR002', 'ÀÏ¹Ý°ü¸®ÀÚ');
+-- 7. ADMIN_ROLE (ê´€ë¦¬ìžê¶Œí•œ)
+INSERT INTO ADMIN_ROLE (AR_CODE, AR_NAME) VALUES ('AR001', 'ìµœê³ ê´€ë¦¬ìž');
+INSERT INTO ADMIN_ROLE (AR_CODE, AR_NAME) VALUES ('AR002', 'ì¼ë°˜ê´€ë¦¬ìž');
 
--- 8. DROP_REASON (Å»¶ô»çÀ¯)
-INSERT INTO DROP_REASON (DR_CODE, DR_REASON) VALUES ('DR001', '°³ÀÎ»çÁ¤');
-INSERT INTO DROP_REASON (DR_CODE, DR_REASON) VALUES ('DR002', '°Ç°­¾ÇÈ­');
-INSERT INTO DROP_REASON (DR_CODE, DR_REASON) VALUES ('DR003', '¹«´Ü°á¼®');
+-- 8. DROP_REASON (íƒˆë½ì‚¬ìœ )
+INSERT INTO DROP_REASON (DR_CODE, DR_REASON) VALUES ('DR001', 'ê°œì¸ì‚¬ì •');
+INSERT INTO DROP_REASON (DR_CODE, DR_REASON) VALUES ('DR002', 'ê±´ê°•ì•…í™”');
+INSERT INTO DROP_REASON (DR_CODE, DR_REASON) VALUES ('DR003', 'ë¬´ë‹¨ê²°ì„');
 
--- 9. ADMIN (°ü¸®ÀÚ: AR_CODE ÂüÁ¶)
+-- 9. ADMIN (ê´€ë¦¬ìž: AR_CODE ì°¸ì¡°)
 INSERT INTO ADMIN (AD_ID, AD_PW, AD_NAME, AD_SSN, AD_DATE, AR_CODE) 
-VALUES ('AD100', '1122333', '±èÁ¾¼­', '751010-1122333', TO_DATE('2012-01-26', 'YYYY-MM-DD'), 'AR002');
+VALUES ('AD100', '1122333', 'ê¹€ì¢…ì„œ', '751010-1122333', TO_DATE('2012-01-26', 'YYYY-MM-DD'), 'AR002');
 INSERT INTO ADMIN (AD_ID, AD_PW, AD_NAME, AD_SSN, AD_DATE, AR_CODE) 
-VALUES ('AD101', '2777777', 'Á¶¹Ì¼÷', '790102-2777777', TO_DATE('2007-12-13', 'YYYY-MM-DD'), 'AR001');
+VALUES ('AD101', '2777777', 'ì¡°ë¯¸ìˆ™', '790102-2777777', TO_DATE('2007-12-13', 'YYYY-MM-DD'), 'AR001');
 INSERT INTO ADMIN (AD_ID, AD_PW, AD_NAME, AD_SSN, AD_DATE, AR_CODE) 
-VALUES ('AD102', '1552147', 'ÀÌ±âÀÚ', '890810-1552147', TO_DATE('2010-05-14', 'YYYY-MM-DD'), 'AR002');
+VALUES ('AD102', '1552147', 'ì´ê¸°ìž', '890810-1552147', TO_DATE('2010-05-14', 'YYYY-MM-DD'), 'AR002');
 
--- 10. OPEN_COURSE (°³¼³°úÁ¤: CR_CODE, CL_CODE ÂüÁ¶)
+-- 10. OPEN_COURSE (ê°œì„¤ê³¼ì •: CR_CODE, CL_CODE ì°¸ì¡°)
 INSERT INTO OPEN_COURSE (OC_CODE, CR_CODE, OC_SDATE, OC_EDATE, CL_CODE, OC_DATE) 
 VALUES ('OC001', 'CR001', TO_DATE('2025-11-17', 'YYYY-MM-DD'), TO_DATE('2026-06-15', 'YYYY-MM-DD'), 'CL002', TO_DATE('2025-10-10', 'YYYY-MM-DD'));
 INSERT INTO OPEN_COURSE (OC_CODE, CR_CODE, OC_SDATE, OC_EDATE, CL_CODE, OC_DATE) 
 VALUES ('OC002', 'CR002', TO_DATE('2026-01-05', 'YYYY-MM-DD'), TO_DATE('2026-06-29', 'YYYY-MM-DD'), 'CL001', TO_DATE('2025-12-15', 'YYYY-MM-DD'));
 
--- 11. OPEN_SUB (°³¼³°ú¸ñ: OC_CODE, PF_ID, SUB_CODE, TB_CODE ÂüÁ¶)
--- ¹èÁ¡(WEIGHT) ÇÕ°è ¹× CHECK Á¦¾àÁ¶°Ç ÁØ¼ö
+-- 11. OPEN_SUB (ê°œì„¤ê³¼ëª©: OC_CODE, PF_ID, SUB_CODE, TB_CODE ì°¸ì¡°)
+-- ë°°ì (WEIGHT) í•©ê³„ ë° CHECK ì œì•½ì¡°ê±´ ì¤€ìˆ˜
 INSERT INTO OPEN_SUB (OS_CODE, OC_CODE, PF_ID, SUB_CODE, OS_SDATE, OS_EDATE, TB_CODE, ATT_WEIGHT, WRT_WEIGHT, PRC_WEIGHT, OS_DATE) 
 VALUES ('OS001', 'OC001', 'PF101', 'SUB001', TO_DATE('2025-11-17', 'YYYY-MM-DD'), TO_DATE('2026-02-25', 'YYYY-MM-DD'), 'TB001', 20, 30, 50, TO_DATE('2025-10-10', 'YYYY-MM-DD'));
 INSERT INTO OPEN_SUB (OS_CODE, OC_CODE, PF_ID, SUB_CODE, OS_SDATE, OS_EDATE, TB_CODE, ATT_WEIGHT, WRT_WEIGHT, PRC_WEIGHT, OS_DATE) 
@@ -335,18 +335,18 @@ INSERT INTO OPEN_SUB (OS_CODE, OC_CODE, PF_ID, SUB_CODE, OS_SDATE, OS_EDATE, TB_
 VALUES ('OS004', 'OC002', 'PF101', 'SUB002', TO_DATE('2026-04-01', 'YYYY-MM-DD'), TO_DATE('2026-06-29', 'YYYY-MM-DD'), 'TB003', NULL, NULL, NULL, TO_DATE('2025-12-16', 'YYYY-MM-DD'));
 
 
--- 12. ENROLLMENT (¼ö°­½ÅÃ»: OC_CODE, ST_ID ÂüÁ¶)
+-- 12. ENROLLMENT (ìˆ˜ê°•ì‹ ì²­: OC_CODE, ST_ID ì°¸ì¡°)
 INSERT INTO ENROLLMENT (ER_CODE, OC_CODE, ST_ID, ER_DATE) VALUES ('ER001', 'OC001', 'ST111', TO_DATE('2025-09-28', 'YYYY-MM-DD'));
 INSERT INTO ENROLLMENT (ER_CODE, OC_CODE, ST_ID, ER_DATE) VALUES ('ER002', 'OC002', 'ST112', TO_DATE('2025-10-20', 'YYYY-MM-DD'));
 INSERT INTO ENROLLMENT (ER_CODE, OC_CODE, ST_ID, ER_DATE) VALUES ('ER003', 'OC002', 'ST113', TO_DATE('2025-12-29', 'YYYY-MM-DD'));
 
--- 13. DROP_OUT (ÁßµµÅ»¶ô: ER_CODE, DR_CODE ÂüÁ¶)
+-- 13. DROP_OUT (ì¤‘ë„íƒˆë½: ER_CODE, DR_CODE ì°¸ì¡°)
 INSERT INTO DROP_OUT (DO_CODE, ER_CODE, DO_DATE, DR_CODE) 
 VALUES ('DO001', 'ER001', TO_DATE('2025-12-11', 'YYYY-MM-DD'), 'DR001');
 INSERT INTO DROP_OUT (DO_CODE, ER_CODE, DO_DATE, DR_CODE) 
 VALUES ('DO002', 'ER002', TO_DATE('2026-06-27', 'YYYY-MM-DD'), 'DR002');
 
--- 14. GRADE (¼ºÀû: ER_CODE, OS_CODE ÂüÁ¶)
+-- 14. GRADE (ì„±ì : ER_CODE, OS_CODE ì°¸ì¡°)
 INSERT INTO GRADE (GR_CODE, ER_CODE, OS_CODE, ATT_SCORE, WRT_SCORE, PRC_SCORE, GR_DATE) 
 VALUES ('GR001', 'ER002', 'OS003', 80, 70, 60, TO_DATE('2026-03-20', 'YYYY-MM-DD'));
 INSERT INTO GRADE (GR_CODE, ER_CODE, OS_CODE, ATT_SCORE, WRT_SCORE, PRC_SCORE, GR_DATE) 
@@ -354,8 +354,8 @@ VALUES ('GR002', 'ER002', 'OS004', 75, 57, 45, TO_DATE('2026-06-26', 'YYYY-MM-DD
 
 
 --------------------------------------------------------------------------------
--- ÇÁ·Î½ÃÀú/ÇÔ¼ö ¸ðµÎ ÄÄÆÄÀÏ ½ÇÇà ---------------------------------------------- 
--- °ü¸®ÀÚ ·Î±×ÀÎ
+-- í”„ë¡œì‹œì €/í•¨ìˆ˜ ëª¨ë‘ ì»´íŒŒì¼ ì‹¤í–‰ ---------------------------------------------- 
+-- ê´€ë¦¬ìž ë¡œê·¸ì¸
 CREATE OR REPLACE PROCEDURE PRC_AD_LOGIN
 (
      P_AD_ID IN ADMIN.AD_ID%TYPE
@@ -368,36 +368,36 @@ IS
     V_ID_MATCH NUMBER;
     V_PW_MATCH NUMBER;
 BEGIN
-    -- 1. ¾ÆÀÌµð Á¸Àç ¿©ºÎ È®ÀÎ
+    -- 1. ì•„ì´ë”” ì¡´ìž¬ ì—¬ë¶€ í™•ì¸
     SELECT COUNT(*) INTO V_ID_MATCH
     FROM ADMIN
     WHERE AD_ID = P_AD_ID;
     
-    -- ¾ÆÀÌµð°¡ Á¸ÀçÇÏÁö ¾Ê´Â °æ¿ì
+    -- ì•„ì´ë””ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ê²½ìš°
     IF V_ID_MATCH = 0 THEN
         P_RESULT := 'ID_NOT_FOUND';
         P_AD_NAME := NULL;
         RETURN;
     END IF;
     
-    -- 2. ºñ¹Ð¹øÈ£ ÀÏÄ¡ ¿©ºÎ È®ÀÎ
+    -- 2. ë¹„ë°€ë²ˆí˜¸ ì¼ì¹˜ ì—¬ë¶€ í™•ì¸
     SELECT COUNT(*) INTO V_PW_MATCH
     FROM ADMIN
     WHERE AD_ID = P_AD_ID AND AD_PW = P_AD_PW;
     
-    -- ºñ¹Ð¹øÈ£°¡ Æ²¸° °æ¿ì
+    -- ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë¦° ê²½ìš°
     IF V_PW_MATCH = 0 THEN
         P_RESULT := 'WRONG_PASSWORD';
         P_AD_NAME := NULL;
         RETURN;
     END IF;
     
-    -- 3. ·Î±×ÀÎ ¼º°ø
+    -- 3. ë¡œê·¸ì¸ ì„±ê³µ
     SELECT AD_NAME INTO P_AD_NAME
     FROM ADMIN
     WHERE AD_ID = P_AD_ID AND AD_PW = P_AD_PW;
     
-    P_RESULT := P_AD_ID;  -- ¼º°ø ½Ã ¾ÆÀÌµð ¹ÝÈ¯
+    P_RESULT := P_AD_ID;  -- ì„±ê³µ ì‹œ ì•„ì´ë”” ë°˜í™˜
     
 EXCEPTION
     WHEN OTHERS THEN
@@ -406,7 +406,7 @@ EXCEPTION
 END;
 
 
--- ±³¼öÀÚ ·Î±×ÀÎ
+-- êµìˆ˜ìž ë¡œê·¸ì¸
 CREATE OR REPLACE PROCEDURE PRC_PF_LOGIN
 (
      P_PF_ID IN PROF.PF_ID%TYPE
@@ -423,31 +423,31 @@ BEGIN
     FROM PROF
     WHERE PF_ID = P_PF_ID;
    
-   -- ¾ÆÀÌµð°¡ Á¸ÀçÇÏÁö ¾Ê´Â °æ¿ì
+   -- ì•„ì´ë””ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ê²½ìš°
     IF V_ID_MATCH = 0 THEN
         P_RESULT := 'ID_NOT_FOUND';
         P_PF_NAME := NULL;
         RETURN;
     END IF;
     
-    -- 2. ºñ¹Ð¹øÈ£ ÀÏÄ¡ ¿©ºÎ È®ÀÎ
+    -- 2. ë¹„ë°€ë²ˆí˜¸ ì¼ì¹˜ ì—¬ë¶€ í™•ì¸
     SELECT COUNT(*) INTO V_PW_MATCH
     FROM PROF
     WHERE PF_ID = P_PF_ID AND PF_PW = P_PF_PW;
     
-    -- ºñ¹Ð¹øÈ£°¡ Æ²¸° °æ¿ì
+    -- ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë¦° ê²½ìš°
     IF V_PW_MATCH = 0 THEN
         P_RESULT := 'WRONG_PASSWORD';
         P_PF_NAME := NULL;
         RETURN;
     END IF;
     
-    -- 3. ·Î±×ÀÎ ¼º°ø
+    -- 3. ë¡œê·¸ì¸ ì„±ê³µ
     SELECT PF_NAME INTO P_PF_NAME
     FROM PROF
     WHERE PF_ID = P_PF_ID AND PF_PW = P_PF_PW;
     
-    P_RESULT := P_PF_ID;  -- ¼º°ø ½Ã ¾ÆÀÌµð ¹ÝÈ¯
+    P_RESULT := P_PF_ID;  -- ì„±ê³µ ì‹œ ì•„ì´ë”” ë°˜í™˜
     
 EXCEPTION
     WHEN OTHERS THEN
@@ -455,7 +455,7 @@ EXCEPTION
         P_PF_NAME := NULL;
 END;
 
--- ÇÐ»ý ·Î±×ÀÎ
+-- í•™ìƒ ë¡œê·¸ì¸
 CREATE OR REPLACE PROCEDURE PRC_ST_LOGIN
 (
      P_ST_ID IN STUD.ST_ID%TYPE
@@ -472,31 +472,31 @@ BEGIN
     FROM STUD
     WHERE ST_ID = P_ST_ID;
    
-   -- ¾ÆÀÌµð°¡ Á¸ÀçÇÏÁö ¾Ê´Â °æ¿ì
+   -- ì•„ì´ë””ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ê²½ìš°
     IF V_ID_MATCH = 0 THEN
         P_RESULT := 'ID_NOT_FOUND';
         P_ST_NAME := NULL;
         RETURN;
     END IF;
     
-    -- 2. ºñ¹Ð¹øÈ£ ÀÏÄ¡ ¿©ºÎ È®ÀÎ
+    -- 2. ë¹„ë°€ë²ˆí˜¸ ì¼ì¹˜ ì—¬ë¶€ í™•ì¸
     SELECT COUNT(*) INTO V_PW_MATCH
     FROM STUD
     WHERE ST_ID = P_ST_ID AND ST_PW = P_ST_PW;
     
-    -- ºñ¹Ð¹øÈ£°¡ Æ²¸° °æ¿ì
+    -- ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë¦° ê²½ìš°
     IF V_PW_MATCH = 0 THEN
         P_RESULT := 'WRONG_PASSWORD';
         P_ST_NAME := NULL;
         RETURN;
     END IF;
     
-    -- 3. ·Î±×ÀÎ ¼º°ø
+    -- 3. ë¡œê·¸ì¸ ì„±ê³µ
     SELECT ST_NAME INTO P_ST_NAME
     FROM STUD
     WHERE ST_ID = P_ST_ID AND ST_PW = P_ST_PW;
     
-    P_RESULT := P_ST_ID;  -- ¼º°ø ½Ã ¾ÆÀÌµð ¹ÝÈ¯
+    P_RESULT := P_ST_ID;  -- ì„±ê³µ ì‹œ ì•„ì´ë”” ë°˜í™˜
     
     EXCEPTION
         WHEN OTHERS THEN
@@ -504,7 +504,7 @@ BEGIN
             P_ST_NAME := NULL;
 END;
 
--- ÃÖÁ¾°ü¸®ÀÚ (°ü¸®ÀÚ ¿ªÇÒ) CUD
+-- ìµœì¢…ê´€ë¦¬ìž (ê´€ë¦¬ìž ì—­í• ) CUD
 CREATE OR REPLACE PROCEDURE PRC_AR_CUD
 (
      P_MODE IN VARCHAR2
@@ -521,20 +521,20 @@ BEGIN
         WHERE AR_NAME = P_AR_NAME;
 
         IF V_AR_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20001, 'Áßº¹ÀÌ Á¸ÀçÇÕ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20001, 'ì¤‘ë³µì´ ì¡´ìž¬í•©ë‹ˆë‹¤.');
         END IF;
         
         INSERT INTO ADMIN_ROLE (AR_CODE, AR_NAME)
         VALUES (P_AR_CODE, P_AR_NAME);
 
     ELSIF P_MODE = 'U' THEN
-        -- º¯°æÇÏ·Á´Â ÀÌ¸§ÀÌ ´Ù¸¥ ÄÚµå¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- ë³€ê²½í•˜ë ¤ëŠ” ì´ë¦„ì´ ë‹¤ë¥¸ ì½”ë“œì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_AR_CNT
         FROM ADMIN_ROLE
         WHERE AR_NAME = P_AR_NAME AND AR_CODE <> P_AR_CODE;
 
         IF V_AR_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20002, 'ÀÌ¹Ì »ç¿ë ÁßÀÎ ÀÌ¸§ÀÔ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20002, 'ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì´ë¦„ìž…ë‹ˆë‹¤.');
         END IF;
         
         UPDATE ADMIN_ROLE
@@ -542,7 +542,7 @@ BEGIN
         WHERE AR_CODE = P_AR_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20004, '¼öÁ¤ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20004, 'ìˆ˜ì • ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
 
     ELSIF P_MODE = 'D' THEN
@@ -551,20 +551,20 @@ BEGIN
         WHERE AR_CODE = P_AR_CODE;
 
         IF V_AR_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20003, '»ç¿ë ÁßÀÎ ±ÇÇÑÀº »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20003, 'ì‚¬ìš© ì¤‘ì¸ ê¶Œí•œì€ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
         END IF;
 
         DELETE FROM ADMIN_ROLE
         WHERE AR_CODE = P_AR_CODE;
 
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20005, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20005, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
     END IF;
     COMMIT;
 END;
 
--- °ü¸®ÀÚ (°­ÀÇ½Ç¸í) CUD
+-- ê´€ë¦¬ìž (ê°•ì˜ì‹¤ëª…) CUD
 CREATE OR REPLACE PROCEDURE PRC_CL_CUD
 (
      P_MODE IN VARCHAR2
@@ -581,20 +581,20 @@ BEGIN
         WHERE CL_NAME = P_CL_NAME;
         
         IF V_CL_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20001, 'Áßº¹ÀÌ Á¸ÀçÇÕ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20001, 'ì¤‘ë³µì´ ì¡´ìž¬í•©ë‹ˆë‹¤.');
         END IF;
         
         INSERT INTO CLASS(CL_CODE, CL_NAME)
         VALUES (P_CL_CODE, P_CL_NAME);
     
     ELSIF P_MODE = 'U' THEN
-        -- º¯°æÇÏ·Á´Â ÀÌ¸§ÀÌ ´Ù¸¥ ÄÚµå¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- ë³€ê²½í•˜ë ¤ëŠ” ì´ë¦„ì´ ë‹¤ë¥¸ ì½”ë“œì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_CL_CNT
         FROM CLASS
         WHERE CL_NAME = P_CL_NAME AND CL_CODE <> P_CL_CODE;
         
         IF V_CL_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20002, 'ÀÌ¹Ì »ç¿ë ÁßÀÎ ÀÌ¸§ÀÔ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20002, 'ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì´ë¦„ìž…ë‹ˆë‹¤.');
         END IF;
         
         UPDATE CLASS
@@ -602,31 +602,31 @@ BEGIN
         WHERE CL_CODE = P_CL_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20004, '¼öÁ¤ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20004, 'ìˆ˜ì • ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
         
     ELSIF P_MODE = 'D' THEN
-        -- °­ÀÇ½ÇÀÌ °³¼³°úÁ¤¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- ê°•ì˜ì‹¤ì´ ê°œì„¤ê³¼ì •ì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_CL_CNT
         FROM OPEN_COURSE
         WHERE CL_CODE = P_CL_CODE;
 
         IF V_CL_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20003, '»ç¿ë ÁßÀÎ °­ÀÇ½ÇÀº »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20003, 'ì‚¬ìš© ì¤‘ì¸ ê°•ì˜ì‹¤ì€ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
         END IF;
         
         DELETE FROM CLASS
         WHERE CL_CODE = P_CL_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20005, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20005, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
     END IF;
     COMMIT;
 END;
 
 
--- °ü¸®ÀÚ (°ú¸ñ¸í) CUD
+-- ê´€ë¦¬ìž (ê³¼ëª©ëª…) CUD
 CREATE OR REPLACE PROCEDURE PRC_SUB_CUD
 (
      P_MODE IN VARCHAR2
@@ -643,20 +643,20 @@ BEGIN
         WHERE SUB_NAME = P_SUB_NAME;
         
         IF V_SUB_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20001, 'Áßº¹ÀÌ Á¸ÀçÇÕ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20001, 'ì¤‘ë³µì´ ì¡´ìž¬í•©ë‹ˆë‹¤.');
         END IF;
         
         INSERT INTO SUB(SUB_CODE, SUB_NAME)
         VALUES (P_SUB_CODE, P_SUB_NAME);
         
     ELSIF P_MODE = 'U' THEN
-        -- º¯°æÇÏ·Á´Â ÀÌ¸§ÀÌ ´Ù¸¥ ÄÚµå¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- ë³€ê²½í•˜ë ¤ëŠ” ì´ë¦„ì´ ë‹¤ë¥¸ ì½”ë“œì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_SUB_CNT
         FROM SUB
         WHERE SUB_NAME = P_SUB_NAME AND SUB_CODE <> P_SUB_CODE;
         
         IF V_SUB_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20002, 'ÀÌ¹Ì »ç¿ë ÁßÀÎ ÀÌ¸§ÀÔ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20002, 'ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì´ë¦„ìž…ë‹ˆë‹¤.');
         END IF;
         
         UPDATE SUB
@@ -664,31 +664,31 @@ BEGIN
         WHERE SUB_CODE = P_SUB_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20004, '¼öÁ¤ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20004, 'ìˆ˜ì • ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
         
     ELSIF P_MODE = 'D' THEN
-        -- °ú¸ñÀÌ °³¼³°ú¸ñ¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- ê³¼ëª©ì´ ê°œì„¤ê³¼ëª©ì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_SUB_CNT
         FROM OPEN_SUB
         WHERE SUB_CODE = P_SUB_CODE;
 
         IF V_SUB_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20003, '»ç¿ë ÁßÀÎ °ú¸ñÀº »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20003, 'ì‚¬ìš© ì¤‘ì¸ ê³¼ëª©ì€ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
         END IF;
         
         DELETE FROM SUB
         WHERE SUB_CODE = P_SUB_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20005, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20005, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
     END IF;
     COMMIT;
 END;
 
 
--- °ü¸®ÀÚ (°úÁ¤¸í) C
+-- ê´€ë¦¬ìž (ê³¼ì •ëª…) C
 CREATE OR REPLACE PROCEDURE PRC_CR_C
 (
     P_CR_CODE IN COURSE.CR_CODE%TYPE
@@ -703,7 +703,7 @@ BEGIN
         WHERE CR_NAME = P_CR_NAME;
         
         IF V_CR_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20001, 'Áßº¹ÀÌ Á¸ÀçÇÕ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20001, 'ì¤‘ë³µì´ ì¡´ìž¬í•©ë‹ˆë‹¤.');
         END IF;
         
         INSERT INTO COURSE(CR_CODE, CR_NAME)
@@ -712,7 +712,7 @@ BEGIN
 END;
 
 
--- °ü¸®ÀÚ (°úÁ¤¸í) UD
+-- ê´€ë¦¬ìž (ê³¼ì •ëª…) UD
 CREATE OR REPLACE PROCEDURE PRC_CR_UD
 (
      P_MODE IN VARCHAR2
@@ -724,13 +724,13 @@ IS
 BEGIN
         
     IF P_MODE = 'U' THEN
-        -- º¯°æÇÏ·Á´Â ÀÌ¸§ÀÌ ´Ù¸¥ ÄÚµå¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- ë³€ê²½í•˜ë ¤ëŠ” ì´ë¦„ì´ ë‹¤ë¥¸ ì½”ë“œì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_CR_CNT
         FROM COURSE
         WHERE CR_NAME = P_CR_NAME AND CR_CODE <> P_CR_CODE;
         
         IF V_CR_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20002, 'ÀÌ¹Ì »ç¿ë ÁßÀÎ ÀÌ¸§ÀÔ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20002, 'ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì´ë¦„ìž…ë‹ˆë‹¤.');
         END IF;
         
         UPDATE COURSE
@@ -738,30 +738,30 @@ BEGIN
         WHERE CR_CODE = P_CR_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20004, '¼öÁ¤ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20004, 'ìˆ˜ì • ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
         
     ELSIF P_MODE = 'D' THEN
-        -- °úÁ¤ÀÌ °³¼³°úÁ¤¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- ê³¼ì •ì´ ê°œì„¤ê³¼ì •ì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_CR_CNT
         FROM OPEN_COURSE
         WHERE CR_CODE = P_CR_CODE;
 
         IF V_CR_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20003, '»ç¿ë ÁßÀÎ °úÁ¤Àº »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20003, 'ì‚¬ìš© ì¤‘ì¸ ê³¼ì •ì€ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
         END IF;
         
         DELETE FROM COURSE
         WHERE CR_CODE = P_CR_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20005, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20005, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
     END IF;
     COMMIT;
 END;
 
--- °ü¸®ÀÚ (Å»¶ô»çÀ¯) CUD
+-- ê´€ë¦¬ìž (íƒˆë½ì‚¬ìœ ) CUD
 CREATE OR REPLACE PROCEDURE PRC_DR_CUD
 (
      P_MODE IN VARCHAR2
@@ -778,20 +778,20 @@ BEGIN
         WHERE DR_REASON = P_DR_REASON;
         
         IF V_DR_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20001, 'Áßº¹ÀÌ Á¸ÀçÇÕ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20001, 'ì¤‘ë³µì´ ì¡´ìž¬í•©ë‹ˆë‹¤.');
         END IF;
         
         INSERT INTO DROP_REASON(DR_CODE, DR_REASON)
         VALUES (P_DR_CODE, P_DR_REASON);
         
     ELSIF P_MODE = 'U' THEN
-        -- º¯°æÇÏ·Á´Â »çÀ¯°¡ ´Ù¸¥ ÄÚµå¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- ë³€ê²½í•˜ë ¤ëŠ” ì‚¬ìœ ê°€ ë‹¤ë¥¸ ì½”ë“œì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_DR_CNT
         FROM DROP_REASON
         WHERE DR_REASON = P_DR_REASON AND DR_CODE <> P_DR_CODE;
         
         IF V_DR_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20002, 'ÀÌ¹Ì »ç¿ë ÁßÀÎ »çÀ¯ÀÔ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20002, 'ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì‚¬ìœ ìž…ë‹ˆë‹¤.');
         END IF;
         
         UPDATE DROP_REASON
@@ -799,31 +799,31 @@ BEGIN
         WHERE DR_CODE = P_DR_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20004, '¼öÁ¤ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20004, 'ìˆ˜ì • ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
         
     ELSIF P_MODE = 'D' THEN
-        -- Å»¶ôÄÚµå°¡ ÁßµµÅ»¶ô¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- íƒˆë½ì½”ë“œê°€ ì¤‘ë„íƒˆë½ì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_DR_CNT
         FROM DROP_OUT
         WHERE DR_CODE = P_DR_CODE;
 
         IF V_DR_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20003, '»ç¿ë ÁßÀÎ Å»¶ô»çÀ¯´Â »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20003, 'ì‚¬ìš© ì¤‘ì¸ íƒˆë½ì‚¬ìœ ëŠ” ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
         END IF;
         
         DELETE FROM DROP_REASON
         WHERE DR_CODE = P_DR_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20005, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20005, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
     END IF;
     COMMIT;
 END;
 
 
--- °ü¸®ÀÚ (±³Àç¸í) CUD
+-- ê´€ë¦¬ìž (êµìž¬ëª…) CUD
 CREATE OR REPLACE PROCEDURE PRC_TB_CUD
 (
      P_MODE IN VARCHAR2
@@ -840,20 +840,20 @@ BEGIN
         WHERE TB_NAME = P_TB_NAME;
         
         IF V_TB_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20001, 'Áßº¹ÀÌ Á¸ÀçÇÕ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20001, 'ì¤‘ë³µì´ ì¡´ìž¬í•©ë‹ˆë‹¤.');
         END IF;
         
         INSERT INTO TEXTBOOK(TB_CODE, TB_NAME)
         VALUES (P_TB_CODE, P_TB_NAME);
         
     ELSIF P_MODE = 'U' THEN
-        -- º¯°æÇÏ·Á´Â ÀÌ¸§ÀÌ ´Ù¸¥ ÄÚµå¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- ë³€ê²½í•˜ë ¤ëŠ” ì´ë¦„ì´ ë‹¤ë¥¸ ì½”ë“œì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_TB_CNT
         FROM TEXTBOOK
         WHERE TB_NAME = P_TB_NAME AND TB_CODE <> P_TB_CODE;
         
         IF V_TB_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20002, 'ÀÌ¹Ì »ç¿ë ÁßÀÎ ÀÌ¸§ÀÔ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20002, 'ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì´ë¦„ìž…ë‹ˆë‹¤.');
         END IF;
         
         UPDATE TEXTBOOK
@@ -861,24 +861,24 @@ BEGIN
         WHERE TB_CODE = P_TB_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20004, '¼öÁ¤ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20004, 'ìˆ˜ì • ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
         
     ELSIF P_MODE = 'D' THEN
-        -- ±³Àç°¡ °³¼³°ú¸ñ¿¡¼­ »ç¿ë ÁßÀÎÁö È®ÀÎ
+        -- êµìž¬ê°€ ê°œì„¤ê³¼ëª©ì—ì„œ ì‚¬ìš© ì¤‘ì¸ì§€ í™•ì¸
         SELECT COUNT(*) INTO V_TB_CNT
         FROM OPEN_SUB
         WHERE TB_CODE = P_TB_CODE;
 
         IF V_TB_CNT > 0 THEN
-            RAISE_APPLICATION_ERROR(-20003, '»ç¿ë ÁßÀÎ ±³Àç´Â »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20003, 'ì‚¬ìš© ì¤‘ì¸ êµìž¬ëŠ” ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
         END IF;
         
         DELETE FROM TEXTBOOK
         WHERE TB_CODE = P_TB_CODE;
         
         IF SQL%ROWCOUNT = 0 THEN
-            RAISE_APPLICATION_ERROR(-20005, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20005, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         END IF;
     END IF;
     COMMIT;
@@ -886,7 +886,7 @@ END;
 
 
 
--- °ü¸®ÀÚÀÇ µî±ÞÀº È­¸é¿¡ ÇÑ±Û·Î Ç¥±âµÇ¾î ¼±ÅÃ
+-- ê´€ë¦¬ìžì˜ ë“±ê¸‰ì€ í™”ë©´ì— í•œê¸€ë¡œ í‘œê¸°ë˜ì–´ ì„ íƒ
 CREATE OR REPLACE PROCEDURE PRC_AD_C
 (
  P_NAME  ADMIN.AD_NAME%TYPE
@@ -899,11 +899,11 @@ IS
     USER_DEFINE_ERROR EXCEPTION;
 BEGIN
     
-    -- ÁÖ¹Î¹øÈ£ ÇÏÀÌÇÂ À§Ä¡ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ í•˜ì´í”ˆ ìœ„ì¹˜ ê²€ì¦
     IF (SUBSTR(P_SSN,7,1) != '-') THEN
         RAISE USER_DEFINE_ERROR;
     END IF;
-    -- ÁÖ¹Î¹øÈ£ ¾ÕµÚ ¼ýÀÚ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ ì•žë’¤ ìˆ«ìž ê²€ì¦
     V_SSN := TO_NUMBER(SUBSTR(P_SSN, 1, 6));
     V_SSN := TO_NUMBER(SUBSTR(P_SSN, 8, 7));
     
@@ -917,16 +917,16 @@ BEGIN
     
     EXCEPTION
         WHEN USER_DEFINE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
         WHEN VALUE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
     
 END;
 
 
---ÃÖÁ¾ °ü¸®ÀÚ ¼öÁ¤
+--ìµœì¢… ê´€ë¦¬ìž ìˆ˜ì •
 CREATE OR REPLACE PROCEDURE PRC_AD_U
 (
  P_ID     ADMIN.AD_ID%TYPE
@@ -939,15 +939,15 @@ IS
     V_GRADE ADMIN_ROLE.AR_CODE%TYPE;
     V_NUM NUMBER;
     V_SSN      NUMBER;
-    USER_ERROR EXCEPTION; -- ¿ªÇÒº° ÇÑ¸í¸¸ ³²¾ÆÀÖ´Â °ü¸®ÀÚ¸¦ º¯°æÇÏ·ÁÇÒ¶§
+    USER_ERROR EXCEPTION; -- ì—­í• ë³„ í•œëª…ë§Œ ë‚¨ì•„ìžˆëŠ” ê´€ë¦¬ìžë¥¼ ë³€ê²½í•˜ë ¤í• ë•Œ
     USER_DEFINE_ERROR2 EXCEPTION;
 BEGIN
     
-     -- ÁÖ¹Î¹øÈ£ ÇÏÀÌÇÂ À§Ä¡ °ËÁõ
+     -- ì£¼ë¯¼ë²ˆí˜¸ í•˜ì´í”ˆ ìœ„ì¹˜ ê²€ì¦
     IF (SUBSTR(P_SSN,7,1) != '-') THEN
         RAISE USER_DEFINE_ERROR2;
     END IF;
-    -- ÁÖ¹Î¹øÈ£ ¾ÕµÚ ¼ýÀÚ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ ì•žë’¤ ìˆ«ìž ê²€ì¦
     V_SSN := TO_NUMBER(SUBSTR(P_SSN, 1, 6));
     V_SSN := TO_NUMBER(SUBSTR(P_SSN, 8, 7));
     
@@ -973,17 +973,17 @@ BEGIN
     
     EXCEPTION
         WHEN USER_ERROR
-            THEN RAISE_APPLICATION_ERROR(-20032,'µî±Þº° ÃÖ¼Ò ÇÑ¸íÀÇ °ü¸®ÀÚ°¡ ÇÊ¿äÇÕ´Ï´Ù');
+            THEN RAISE_APPLICATION_ERROR(-20032,'ë“±ê¸‰ë³„ ìµœì†Œ í•œëª…ì˜ ê´€ë¦¬ìžê°€ í•„ìš”í•©ë‹ˆë‹¤');
         WHEN USER_DEFINE_ERROR2 THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
         WHEN VALUE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
     
 END;
 
--- ÃÖÁ¾°ü¸®ÀÚ »èÁ¦
+-- ìµœì¢…ê´€ë¦¬ìž ì‚­ì œ
 CREATE OR REPLACE PROCEDURE PRC_AD_D
 (
 P_ID ADMIN.AD_ID%TYPE
@@ -991,7 +991,7 @@ P_ID ADMIN.AD_ID%TYPE
 IS
     V_GRADE ADMIN_ROLE.AR_CODE%TYPE;
     V_NUM NUMBER;
-    USER_ERROR EXCEPTION;   -- ¿ªÇÒº° ÇÑ¸í¸¸ ³²¾ÆÀÖ´Â °ü¸®ÀÚ¸¦ »èÁ¦ÇÏ·ÁÇÒ¶§
+    USER_ERROR EXCEPTION;   -- ì—­í• ë³„ í•œëª…ë§Œ ë‚¨ì•„ìžˆëŠ” ê´€ë¦¬ìžë¥¼ ì‚­ì œí•˜ë ¤í• ë•Œ
 BEGIN
     SELECT AR_CODE INTO V_GRADE
     FROM ADMIN
@@ -1013,11 +1013,11 @@ BEGIN
     
     EXCEPTION
         WHEN USER_ERROR
-            THEN RAISE_APPLICATION_ERROR(-20014,'µî±Þº° ÃÖ¼Ò ÇÑ¸íÀÇ °ü¸®ÀÚ°¡ ÇÊ¿äÇÕ´Ï´Ù');
+            THEN RAISE_APPLICATION_ERROR(-20014,'ë“±ê¸‰ë³„ ìµœì†Œ í•œëª…ì˜ ê´€ë¦¬ìžê°€ í•„ìš”í•©ë‹ˆë‹¤');
 
 END;
 
--- ÇÐ»ý »ý¼º
+-- í•™ìƒ ìƒì„±
 CREATE OR REPLACE PROCEDURE PRC_ST_C
 ( P_ST_NAME   IN  STUD.ST_NAME%TYPE
 , P_ST_SSN    IN  STUD.ST_SSN%TYPE
@@ -1027,11 +1027,11 @@ IS
     V_SSN   NUMBER;
     USER_DEFINE_ERROR EXCEPTION;
 BEGIN
-    -- ÁÖ¹Î¹øÈ£ ÇÏÀÌÇÂ À§Ä¡ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ í•˜ì´í”ˆ ìœ„ì¹˜ ê²€ì¦
     IF (SUBSTR(P_ST_SSN,7,1) != '-') THEN
         RAISE USER_DEFINE_ERROR;
     END IF;
-    -- ÁÖ¹Î¹øÈ£ ¾ÕµÚ ¼ýÀÚ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ ì•žë’¤ ìˆ«ìž ê²€ì¦
     V_SSN := TO_NUMBER(SUBSTR(P_ST_SSN, 1, 6));
     V_SSN := TO_NUMBER(SUBSTR(P_ST_SSN, 8, 7));
     
@@ -1044,15 +1044,15 @@ BEGIN
     
     EXCEPTION
         WHEN USER_DEFINE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
         WHEN VALUE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
     
 END;
 
--- STUDÅ×ÀÌºí¿¡ UPDATE - °ü¸®ÀÚ¸¸ °¡´É (ÇÐ»ý¾ÆÀÌµð, ÀÌ¸§, ÁÖ¹Î¹øÈ£, ºñ¹Ð¹øÈ£)
+-- STUDí…Œì´ë¸”ì— UPDATE - ê´€ë¦¬ìžë§Œ ê°€ëŠ¥ (í•™ìƒì•„ì´ë””, ì´ë¦„, ì£¼ë¯¼ë²ˆí˜¸, ë¹„ë°€ë²ˆí˜¸)
 CREATE OR REPLACE PROCEDURE PRC_ST_U
 ( P_ST_ID   IN  STUD.ST_ID%TYPE
 , P_ST_NAME IN  STUD.ST_NAME%TYPE
@@ -1065,11 +1065,11 @@ IS
     USER_DEFINE_ERROR1  EXCEPTION;
     USER_DEFINE_ERROR2  EXCEPTION;
 BEGIN
-     -- ÁÖ¹Î¹øÈ£ ÇÏÀÌÇÂ À§Ä¡ °ËÁõ
+     -- ì£¼ë¯¼ë²ˆí˜¸ í•˜ì´í”ˆ ìœ„ì¹˜ ê²€ì¦
     IF (SUBSTR(P_ST_SSN,7,1) != '-') THEN
         RAISE USER_DEFINE_ERROR2;
     END IF;
-    -- ÁÖ¹Î¹øÈ£ ¾ÕµÚ ¼ýÀÚ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ ì•žë’¤ ìˆ«ìž ê²€ì¦
     V_SSN := TO_NUMBER(SUBSTR(P_ST_SSN, 1, 6));
     V_SSN := TO_NUMBER(SUBSTR(P_ST_SSN, 8, 7));
     
@@ -1091,21 +1091,21 @@ BEGIN
     
     EXCEPTION
         WHEN USER_DEFINE_ERROR1 THEN    
-            RAISE_APPLICATION_ERROR(-20006, 'µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20006, 'ë°ì´í„°ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
             ROLLBACK;
         WHEN USER_DEFINE_ERROR2 THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
         WHEN VALUE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
 END;
 
 
 
--- ÇÁ·Î½ÃÀú¸í: PRC_ST_D
--- STUDÅ×ÀÌºí¿¡ DELETE - °ü¸®ÀÚ¸¸ °¡´É (ÇÐ»ý¾ÆÀÌµð) 
--- ÇÐ»ýÀÌ ¼ö°­½ÅÃ»ÀÌ³ª ¼ºÀû¿¡ ¾øÀ» ¶§¸¸ »èÁ¦ °¡´É
+-- í”„ë¡œì‹œì €ëª…: PRC_ST_D
+-- STUDí…Œì´ë¸”ì— DELETE - ê´€ë¦¬ìžë§Œ ê°€ëŠ¥ (í•™ìƒì•„ì´ë””) 
+-- í•™ìƒì´ ìˆ˜ê°•ì‹ ì²­ì´ë‚˜ ì„±ì ì— ì—†ì„ ë•Œë§Œ ì‚­ì œ ê°€ëŠ¥
 CREATE OR REPLACE PROCEDURE PRC_ST_D
 (P_ST_ID IN STUD.ST_ID%TYPE)
 IS
@@ -1139,15 +1139,15 @@ BEGIN
     
     EXCEPTION
         WHEN USER_DEFINE_ERROR1 THEN    
-            RAISE_APPLICATION_ERROR(-20006, 'µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20006, 'ë°ì´í„°ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
             ROLLBACK;
         WHEN USER_DEFINE_ERROR2 THEN
-            RAISE_APPLICATION_ERROR(-20007, '»èÁ¦ ºÒ°¡´ÉÇÕ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20007, 'ì‚­ì œ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.');
             ROLLBACK;
 END;
 
 
--- ±³¼öÀÚ »ý¼º
+-- êµìˆ˜ìž ìƒì„±
 CREATE OR REPLACE PROCEDURE PRC_PF_C
 (
   P_PF_NAME IN PROF.PF_NAME%TYPE,
@@ -1157,11 +1157,11 @@ IS
     V_SSN   NUMBER;
     USER_DEFINE_ERROR EXCEPTION;
 BEGIN
-    -- ÁÖ¹Î¹øÈ£ ÇÏÀÌÇÂ À§Ä¡ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ í•˜ì´í”ˆ ìœ„ì¹˜ ê²€ì¦
     IF (SUBSTR(P_PF_SSN,7,1) != '-') THEN
         RAISE USER_DEFINE_ERROR;
     END IF;
-    -- ÁÖ¹Î¹øÈ£ ¾ÕµÚ ¼ýÀÚ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ ì•žë’¤ ìˆ«ìž ê²€ì¦
     V_SSN := TO_NUMBER(SUBSTR(P_PF_SSN, 1, 6));
     V_SSN := TO_NUMBER(SUBSTR(P_PF_SSN, 8, 7));
     
@@ -1173,14 +1173,14 @@ BEGIN
     
     EXCEPTION
          WHEN USER_DEFINE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
         WHEN VALUE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
 END;
 
--- ±³¼öÀÚ ¼öÁ¤
+-- êµìˆ˜ìž ìˆ˜ì •
 CREATE OR REPLACE PROCEDURE PRC_PF_U
 (
   P_PF_ID   IN PROF.PF_ID%TYPE,
@@ -1197,31 +1197,31 @@ BEGIN
 
     
 
-    -- ¼öÁ¤ ´ë»ó Á¸Àç È®ÀÎ
+    -- ìˆ˜ì • ëŒ€ìƒ ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_PF_CNT
     FROM PROF
     WHERE PF_ID = P_PF_ID;
     
     IF V_PF_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20006, 'µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20006, 'ë°ì´í„°ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
     
-    -- ÁÖ¹Î¹øÈ£ ÇÏÀÌÇÂ À§Ä¡ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ í•˜ì´í”ˆ ìœ„ì¹˜ ê²€ì¦
     IF (SUBSTR(P_PF_SSN,7,1) != '-') THEN
         RAISE USER_DEFINE_ERROR;
     END IF;
-    -- ÁÖ¹Î¹øÈ£ ¾ÕµÚ ¼ýÀÚ °ËÁõ
+    -- ì£¼ë¯¼ë²ˆí˜¸ ì•žë’¤ ìˆ«ìž ê²€ì¦
     V_SSN := TO_NUMBER(SUBSTR(P_PF_SSN, 1, 6));
     V_SSN := TO_NUMBER(SUBSTR(P_PF_SSN, 8, 7));
 
-    -- ÁÖ¹Î¹øÈ£ Áßº¹ È®ÀÎ (ÀÚ±â ÀÚ½Å Á¦¿Ü)
+    -- ì£¼ë¯¼ë²ˆí˜¸ ì¤‘ë³µ í™•ì¸ (ìžê¸° ìžì‹  ì œì™¸)
     SELECT COUNT(*) INTO V_PFU_CNT
     FROM PROF
     WHERE PF_SSN = P_PF_SSN
       AND PF_ID != P_PF_ID;
 
     IF V_PFU_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20014, 'ÀÌ¹Ì »ç¿ë ÁßÀÎ ÁÖ¹Î¹øÈ£ÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20014, 'ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì£¼ë¯¼ë²ˆí˜¸ìž…ë‹ˆë‹¤.');
     END IF;  
        
     UPDATE PROF
@@ -1233,19 +1233,19 @@ BEGIN
     COMMIT;
     
     IF SQL%ROWCOUNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20008, '¼öÁ¤ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20008, 'ìˆ˜ì • ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
     
     EXCEPTION
          WHEN USER_DEFINE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
         WHEN VALUE_ERROR THEN
-            RAISE_APPLICATION_ERROR(-20050, 'ÁÖ¹Îµî·Ï¹øÈ£ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20050, 'ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ í˜•ì‹ì„ ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤.');
             ROLLBACK;
 END;
 
--- ±³¼öÀÚ »èÁ¦
+-- êµìˆ˜ìž ì‚­ì œ
 CREATE OR REPLACE PROCEDURE PRC_PF_D
 (
   P_PF_ID IN PROF.PF_ID%TYPE
@@ -1254,22 +1254,22 @@ IS
     V_PF_CNT  NUMBER;
     V_SUB_CNT NUMBER;
 BEGIN
-    -- ±³¼ö Á¸Àç È®ÀÎ
+    -- êµìˆ˜ ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_PF_CNT 
     FROM PROF 
     WHERE PF_ID = P_PF_ID;
     
     IF V_PF_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20006, 'µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20006, 'ë°ì´í„°ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
     
-    -- ´ã´ç °³¼³°ú¸ñ È®ÀÎ
+    -- ë‹´ë‹¹ ê°œì„¤ê³¼ëª© í™•ì¸
     SELECT COUNT(*) INTO V_SUB_CNT 
     FROM OPEN_SUB 
     WHERE PF_ID = P_PF_ID;
     
     IF V_SUB_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20015, '´ã´ç ÁßÀÎ °³¼³°ú¸ñÀÌ Á¸ÀçÇÏ¿© »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20015, 'ë‹´ë‹¹ ì¤‘ì¸ ê°œì„¤ê³¼ëª©ì´ ì¡´ìž¬í•˜ì—¬ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
     END IF;
     
     DELETE FROM PROF
@@ -1278,11 +1278,11 @@ BEGIN
     COMMIT;
     
     IF SQL%ROWCOUNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20006, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20006, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
 END;
 
--- °³¼³°úÁ¤ »ý¼º
+-- ê°œì„¤ê³¼ì • ìƒì„±
 CREATE OR REPLACE PROCEDURE PRC_OC_C
 (
   P_CR_CODE  IN OPEN_COURSE.CR_CODE%TYPE,
@@ -1294,31 +1294,31 @@ IS
     V_CR_CNT   NUMBER;
     V_ROOM_CNT NUMBER;
 BEGIN
-    -- ³¯Â¥ À¯È¿¼º Ã¼Å©
+    -- ë‚ ì§œ ìœ íš¨ì„± ì²´í¬
     IF P_OC_EDATE < P_OC_SDATE THEN
-        RAISE_APPLICATION_ERROR(-20016, 'Á¾·áÀÏÀÌ ½ÃÀÛÀÏº¸´Ù ºü¸¦ ¼ö ¾ø½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20016, 'ì¢…ë£Œì¼ì´ ì‹œìž‘ì¼ë³´ë‹¤ ë¹ ë¥¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
     END IF;
     
-    -- °úÁ¤ÄÚµå Á¸Àç È®ÀÎ
+    -- ê³¼ì •ì½”ë“œ ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_CR_CNT
     FROM COURSE
     WHERE CR_CODE = P_CR_CODE;
     
     IF V_CR_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20017, 'Á¸ÀçÇÏÁö ¾Ê´Â °úÁ¤ÄÚµåÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20017, 'ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ê³¼ì •ì½”ë“œìž…ë‹ˆë‹¤.');
     END IF;
     
-    -- µ¿ÀÏ °úÁ¤ Áßº¹ °³¼³ È®ÀÎ (°°Àº ³¯Â¥¿¡ °°Àº °úÁ¤)
+    -- ë™ì¼ ê³¼ì • ì¤‘ë³µ ê°œì„¤ í™•ì¸ (ê°™ì€ ë‚ ì§œì— ê°™ì€ ê³¼ì •)
     SELECT COUNT(*) INTO V_CR_CNT
     FROM OPEN_COURSE
     WHERE CR_CODE = P_CR_CODE
       AND OC_SDATE = P_OC_SDATE;
     
     IF V_CR_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20018, 'ÇØ´ç ³¯Â¥¿¡ ÀÌ¹Ì µ¿ÀÏÇÑ °úÁ¤ÀÌ °³¼³µÇ¾î ÀÖ½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20018, 'í•´ë‹¹ ë‚ ì§œì— ì´ë¯¸ ë™ì¼í•œ ê³¼ì •ì´ ê°œì„¤ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.');
     END IF;
     
-    -- °­ÀÇ½Ç Áßº¹ »ç¿ë È®ÀÎ (°°Àº ±â°£¿¡ °°Àº °­ÀÇ½Ç)
+    -- ê°•ì˜ì‹¤ ì¤‘ë³µ ì‚¬ìš© í™•ì¸ (ê°™ì€ ê¸°ê°„ì— ê°™ì€ ê°•ì˜ì‹¤)
     SELECT COUNT(*) INTO V_ROOM_CNT
     FROM OPEN_COURSE
     WHERE CL_CODE = P_CL_CODE
@@ -1329,7 +1329,7 @@ BEGIN
       );
     
     IF V_ROOM_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20004, 'ÇØ´ç ±â°£¿¡ °­ÀÇ½ÇÀÌ ÀÌ¹Ì »ç¿ë ÁßÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20004, 'í•´ë‹¹ ê¸°ê°„ì— ê°•ì˜ì‹¤ì´ ì´ë¯¸ ì‚¬ìš© ì¤‘ìž…ë‹ˆë‹¤.');
     END IF;
 
     INSERT INTO OPEN_COURSE(OC_CODE, CR_CODE, OC_SDATE, OC_EDATE, CL_CODE)
@@ -1339,7 +1339,7 @@ BEGIN
     
 END;
 
--- °³¼³°úÁ¤ ¼öÁ¤
+-- ê°œì„¤ê³¼ì • ìˆ˜ì •
 CREATE OR REPLACE PROCEDURE PRC_OC_U
 (
   P_OC_CODE  IN OPEN_COURSE.OC_CODE%TYPE,
@@ -1353,30 +1353,30 @@ IS
   V_ROOM_CNT   NUMBER;
   V_CR_CNT     NUMBER;
 BEGIN
-    -- ³¯Â¥ À¯È¿¼º Ã¼Å©
+    -- ë‚ ì§œ ìœ íš¨ì„± ì²´í¬
     IF P_OC_EDATE < P_OC_SDATE THEN
-        RAISE_APPLICATION_ERROR(-20016, 'Á¾·áÀÏÀÌ ½ÃÀÛÀÏº¸´Ù ºü¸¦ ¼ö ¾ø½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20016, 'ì¢…ë£Œì¼ì´ ì‹œìž‘ì¼ë³´ë‹¤ ë¹ ë¥¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
     END IF;
     
-    -- ¼öÁ¤ ´ë»ó Á¸Àç È®ÀÎ
+    -- ìˆ˜ì • ëŒ€ìƒ ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_OC_CNT
     FROM OPEN_COURSE
     WHERE OC_CODE = P_OC_CODE;
     
     IF V_OC_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20020, '¼öÁ¤ÇÒ °³¼³°úÁ¤ÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20020, 'ìˆ˜ì •í•  ê°œì„¤ê³¼ì •ì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
     
-    -- °úÁ¤ÄÚµå Á¸Àç È®ÀÎ
+    -- ê³¼ì •ì½”ë“œ ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_CR_CNT
     FROM COURSE
     WHERE CR_CODE = P_CR_CODE;
     
     IF V_CR_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20017, 'Á¸ÀçÇÏÁö ¾Ê´Â °úÁ¤ÄÚµåÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20017, 'ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ê³¼ì •ì½”ë“œìž…ë‹ˆë‹¤.');
     END IF;
     
-    -- Áßº¹ °úÁ¤ È®ÀÎ (ÀÚ±â ÀÚ½Å Á¦¿Ü)
+    -- ì¤‘ë³µ ê³¼ì • í™•ì¸ (ìžê¸° ìžì‹  ì œì™¸)
     SELECT COUNT(*) INTO V_OC_CNT
     FROM OPEN_COURSE
     WHERE CR_CODE = P_CR_CODE
@@ -1384,10 +1384,10 @@ BEGIN
       AND OC_CODE = P_OC_CODE;
 
     IF V_OC_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20021, 'ÀÌ¹Ì µ¿ÀÏÇÑ °³¼³°úÁ¤ÀÌ Á¸ÀçÇÕ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20021, 'ì´ë¯¸ ë™ì¼í•œ ê°œì„¤ê³¼ì •ì´ ì¡´ìž¬í•©ë‹ˆë‹¤.');
     END IF;
     
-    -- °­ÀÇ½Ç Áßº¹ È®ÀÎ (±â°£ °ãÄ§, ÀÚ±â ÀÚ½Å Á¦¿Ü)
+    -- ê°•ì˜ì‹¤ ì¤‘ë³µ í™•ì¸ (ê¸°ê°„ ê²¹ì¹¨, ìžê¸° ìžì‹  ì œì™¸)
     SELECT COUNT(*) INTO V_ROOM_CNT
     FROM OPEN_COURSE
     WHERE CL_CODE = P_CL_CODE
@@ -1399,7 +1399,7 @@ BEGIN
       );
 
     IF V_ROOM_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20019, 'ÇØ´ç ±â°£¿¡ °­ÀÇ½ÇÀÌ ÀÌ¹Ì »ç¿ë ÁßÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20019, 'í•´ë‹¹ ê¸°ê°„ì— ê°•ì˜ì‹¤ì´ ì´ë¯¸ ì‚¬ìš© ì¤‘ìž…ë‹ˆë‹¤.');
     END IF;
            
     UPDATE OPEN_COURSE
@@ -1412,11 +1412,11 @@ BEGIN
     COMMIT;
     
     IF SQL%ROWCOUNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20008, '¼öÁ¤ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20008, 'ìˆ˜ì • ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
 END;
 
--- °³¼³°úÁ¤ »èÁ¦
+-- ê°œì„¤ê³¼ì • ì‚­ì œ
 CREATE OR REPLACE PROCEDURE PRC_OC_D
 (
   P_OC_CODE IN OPEN_COURSE.OC_CODE%TYPE
@@ -1426,28 +1426,28 @@ IS
     V_SUB_CNT    NUMBER;
     V_ENROLL_CNT NUMBER;
 BEGIN
-    -- °³¼³°úÁ¤ Á¸Àç È®ÀÎ
+    -- ê°œì„¤ê³¼ì • ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_OC_CNT
     FROM OPEN_COURSE
     WHERE OC_CODE = P_OC_CODE;
     
     IF V_OC_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20012, 'Á¸ÀçÇÏÁö ¾Ê´Â °³¼³°úÁ¤ÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20012, 'ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ê°œì„¤ê³¼ì •ìž…ë‹ˆë‹¤.');
     END IF;
     
-    -- °³¼³°ú¸ñ Á¸Àç È®ÀÎ
+    -- ê°œì„¤ê³¼ëª© ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_SUB_CNT
     FROM OPEN_SUB
     WHERE OC_CODE = P_OC_CODE;
 
-    -- ¼ö°­½ÅÃ» Á¸Àç È®ÀÎ
+    -- ìˆ˜ê°•ì‹ ì²­ ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_ENROLL_CNT
     FROM ENROLLMENT
     WHERE OC_CODE = P_OC_CODE;
 
-    -- ÀÚ½Ä µ¥ÀÌÅÍ Á¸Àç ½Ã »èÁ¦ ºÒ°¡
+    -- ìžì‹ ë°ì´í„° ì¡´ìž¬ ì‹œ ì‚­ì œ ë¶ˆê°€
     IF V_SUB_CNT > 0 OR V_ENROLL_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20022, '°³¼³°ú¸ñ ¶Ç´Â ¼ö°­½ÅÃ» µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏ¿© »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20022, 'ê°œì„¤ê³¼ëª© ë˜ëŠ” ìˆ˜ê°•ì‹ ì²­ ë°ì´í„°ê°€ ì¡´ìž¬í•˜ì—¬ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
     END IF;
     
     DELETE FROM OPEN_COURSE
@@ -1456,16 +1456,16 @@ BEGIN
     COMMIT;
     
     IF SQL%ROWCOUNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20005, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20005, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
 END;
 
--- ÇÔ¼ö
--- °³¼³°ú¸ñ
+-- í•¨ìˆ˜
+-- ê°œì„¤ê³¼ëª©
 
--- Æ÷ÇÔµÈ °³¼³°úÁ¤³»¿¡ ¸Â´Â ÀÏ½Ã¸¦ ÀÔ·ÂÇß´ÂÁö È®ÀÎÇÏ´Â ÇÔ¼ö
---(°³¼³°úÁ¤ÄÚµå,½ÃÀÛÀÏ½Ã,Á¾·áÀÏ½Ã)
--- 1½ÇÆÐ 0¼º°ø ÇÔ¼ö
+-- í¬í•¨ëœ ê°œì„¤ê³¼ì •ë‚´ì— ë§žëŠ” ì¼ì‹œë¥¼ ìž…ë ¥í–ˆëŠ”ì§€ í™•ì¸í•˜ëŠ” í•¨ìˆ˜
+--(ê°œì„¤ê³¼ì •ì½”ë“œ,ì‹œìž‘ì¼ì‹œ,ì¢…ë£Œì¼ì‹œ)
+-- 1ì‹¤íŒ¨ 0ì„±ê³µ í•¨ìˆ˜
 CREATE OR REPLACE FUNCTION FN_OS_D 
 (
  P_OCCODE   OPEN_SUB.OC_CODE%TYPE
@@ -1489,11 +1489,11 @@ BEGIN
     RETURN V_RESULT;
 END;
 
--- Áßº¹Ã¼Å© 
--- °úÁ¤º° ±³À°ÀÏ Áßº¹ È®ÀÎ ÇÔ¼ö
--- (°³¼³°úÁ¤ÄÚµå,½ÃÀÛÀÏ½Ã,Á¾·áÀÏ½Ã)
--- 1½ÇÆÐ 0¼º°ø ÇÔ¼ö
--- INSERT ¿ë
+-- ì¤‘ë³µì²´í¬ 
+-- ê³¼ì •ë³„ êµìœ¡ì¼ ì¤‘ë³µ í™•ì¸ í•¨ìˆ˜
+-- (ê°œì„¤ê³¼ì •ì½”ë“œ,ì‹œìž‘ì¼ì‹œ,ì¢…ë£Œì¼ì‹œ)
+-- 1ì‹¤íŒ¨ 0ì„±ê³µ í•¨ìˆ˜
+-- INSERT ìš©
 CREATE OR REPLACE FUNCTION FN_OS_J1
 (
  P_OCCODE   OPEN_SUB.OC_CODE%TYPE
@@ -1517,7 +1517,7 @@ BEGIN
     END LOOP;
     RETURN V_RESULT;
 END;
--- UPDATE ¿ë
+-- UPDATE ìš©
 CREATE OR REPLACE FUNCTION FN_OS_J2
 (
  P_OSCODE   OPEN_SUB.OC_CODE%TYPE
@@ -1544,10 +1544,10 @@ BEGIN
     RETURN V_RESULT;
 END;
 
--- ±³¼öÀÇ °­ÀÇ ÀÏÀÚ Áßº¹ È®ÀÎ ÇÔ¼ö
--- (±³¼ö¾ÆÀÌµð,½ÃÀÛÀÏ½Ã,Á¾·áÀÏ½Ã)
--- 1½ÇÆÐ 0¼º°ø ÇÔ¼ö
--- INSERT ¿ë
+-- êµìˆ˜ì˜ ê°•ì˜ ì¼ìž ì¤‘ë³µ í™•ì¸ í•¨ìˆ˜
+-- (êµìˆ˜ì•„ì´ë””,ì‹œìž‘ì¼ì‹œ,ì¢…ë£Œì¼ì‹œ)
+-- 1ì‹¤íŒ¨ 0ì„±ê³µ í•¨ìˆ˜
+-- INSERT ìš©
 CREATE OR REPLACE FUNCTION FN_OS_G1
 (
  P_PFID     OPEN_SUB.PF_ID%TYPE
@@ -1572,7 +1572,7 @@ BEGIN
     RETURN V_RESULT;
 END;
 
--- UPDATE ¿ë
+-- UPDATE ìš©
 CREATE OR REPLACE FUNCTION FN_OS_G2
 (
  P_OSCODE   OPEN_SUB.OC_CODE%TYPE
@@ -1599,8 +1599,8 @@ BEGIN
     RETURN V_RESULT;
 END;
 
--- °ú¸ñ »ý¼º
-CREATE OR REPLACE PROCEDURE PRC_OS_C -- ¹èÁ¡ ¾È¹Þ´Â »óÅÂ
+-- ê³¼ëª© ìƒì„±
+CREATE OR REPLACE PROCEDURE PRC_OS_C -- ë°°ì  ì•ˆë°›ëŠ” ìƒíƒœ
 (
  P_OCCODE   OPEN_SUB.OC_CODE%TYPE
 ,P_PFID     OPEN_SUB.PF_ID%TYPE
@@ -1610,18 +1610,18 @@ CREATE OR REPLACE PROCEDURE PRC_OS_C -- ¹èÁ¡ ¾È¹Þ´Â »óÅÂ
 ,P_TBCODE   OPEN_SUB.TB_CODE%TYPE 
 )
 IS
-    USER_ERROR1 EXCEPTION; -- °úÁ¤³» Æ÷ÇÔµÇ´Â ±â°£ÀÌ¾Æ´Ï¸é ¿¡·¯
-    USER_ERROR2 EXCEPTION; -- °ú¸ñ ÀÏ½Ã°¡ Áßº¹ µÇ¸é ¿¡·¯
-    USER_ERROR3 EXCEPTION; -- ±³¼ö ÀÏÁ¤ÀÌ Áßº¹µÇ¸é¿¡·¯
+    USER_ERROR1 EXCEPTION; -- ê³¼ì •ë‚´ í¬í•¨ë˜ëŠ” ê¸°ê°„ì´ì•„ë‹ˆë©´ ì—ëŸ¬
+    USER_ERROR2 EXCEPTION; -- ê³¼ëª© ì¼ì‹œê°€ ì¤‘ë³µ ë˜ë©´ ì—ëŸ¬
+    USER_ERROR3 EXCEPTION; -- êµìˆ˜ ì¼ì •ì´ ì¤‘ë³µë˜ë©´ì—ëŸ¬
 BEGIN
     
-    -- »óÀÇ °³¼³°­ÀÇ³» Æ÷ÇÔ ÀÏÀÚÀÎÁö È®ÀÎ
+    -- ìƒì˜ ê°œì„¤ê°•ì˜ë‚´ í¬í•¨ ì¼ìžì¸ì§€ í™•ì¸
     IF FN_OS_D(P_OCCODE,P_START,P_END) = 1
         THEN RAISE USER_ERROR1;
-    -- °ú¸ñ ÀÏÁ¤ Áßº¹ È®ÀÎ
+    -- ê³¼ëª© ì¼ì • ì¤‘ë³µ í™•ì¸
     ELSIF FN_OS_J1(P_OCCODE,P_START,P_END) = 1
         THEN RAISE USER_ERROR2;
-    --±³¼öÀÚ Áßº¹ È®ÀÎ
+    --êµìˆ˜ìž ì¤‘ë³µ í™•ì¸
     ELSIF FN_OS_G1(P_PFID,P_START,P_END) = 1
         THEN RAISE USER_ERROR3;
     END IF;
@@ -1635,14 +1635,14 @@ BEGIN
     
     EXCEPTION
         WHEN USER_ERROR1
-            THEN RAISE_APPLICATION_ERROR(-20033,'°³¼³°úÁ¤³» ÀÏ½Ã¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä');
+            THEN RAISE_APPLICATION_ERROR(-20033,'ê°œì„¤ê³¼ì •ë‚´ ì¼ì‹œë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”');
         WHEN USER_ERROR2
-            THEN RAISE_APPLICATION_ERROR(-20034,'±âÁ¸ µî·ÏµÈ °ú¸ñ°ú °­ÀÇ ÀÏÀÚ°¡ °ãÄ¥¼ö ¾ø½À´Ï´Ù');
+            THEN RAISE_APPLICATION_ERROR(-20034,'ê¸°ì¡´ ë“±ë¡ëœ ê³¼ëª©ê³¼ ê°•ì˜ ì¼ìžê°€ ê²¹ì¹ ìˆ˜ ì—†ìŠµë‹ˆë‹¤');
         WHEN USER_ERROR3
-            THEN RAISE_APPLICATION_ERROR(-20035,'±³¼öÀÚ´Â ÇÑ°³ÀÇ °­ÀÇ¸¸ °¡´ÉÇÕ´Ï´Ù');
+            THEN RAISE_APPLICATION_ERROR(-20035,'êµìˆ˜ìžëŠ” í•œê°œì˜ ê°•ì˜ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤');
 END;
 
--- °ü¸®ÀÚ °³¼³°ú¸ñ ¼öÁ¤
+-- ê´€ë¦¬ìž ê°œì„¤ê³¼ëª© ìˆ˜ì •
 CREATE OR REPLACE PROCEDURE PRC_OS_U
 (
  P_OSCODE   OPEN_SUB.OS_CODE%TYPE
@@ -1654,18 +1654,18 @@ CREATE OR REPLACE PROCEDURE PRC_OS_U
 ,P_TBCODE   OPEN_SUB.TB_CODE%TYPE
 )
 IS
-    USER_ERROR1 EXCEPTION; -- °úÁ¤³» Æ÷ÇÔµÇ´Â ±â°£ÀÌ¾Æ´Ï¸é ¿¡·¯
-    USER_ERROR2 EXCEPTION; -- °ú¸ñ ÀÏ½Ã°¡ Áßº¹ µÇ¸é ¿¡·¯
-    USER_ERROR3 EXCEPTION; -- ±³¼ö ÀÏÁ¤ÀÌ Áßº¹µÇ¸é¿¡·¯
+    USER_ERROR1 EXCEPTION; -- ê³¼ì •ë‚´ í¬í•¨ë˜ëŠ” ê¸°ê°„ì´ì•„ë‹ˆë©´ ì—ëŸ¬
+    USER_ERROR2 EXCEPTION; -- ê³¼ëª© ì¼ì‹œê°€ ì¤‘ë³µ ë˜ë©´ ì—ëŸ¬
+    USER_ERROR3 EXCEPTION; -- êµìˆ˜ ì¼ì •ì´ ì¤‘ë³µë˜ë©´ì—ëŸ¬
 BEGIN
         
-    -- »óÀ§ °³¼³°­ÀÇ³» Æ÷ÇÔ ÀÏÀÚÀÎÁö È®ÀÎ
+    -- ìƒìœ„ ê°œì„¤ê°•ì˜ë‚´ í¬í•¨ ì¼ìžì¸ì§€ í™•ì¸
     IF FN_OS_D(P_OCCODE,P_START,P_END) = 1
         THEN RAISE USER_ERROR1;
-    -- °ú¸ñ ÀÏÁ¤ Áßº¹ È®ÀÎ
+    -- ê³¼ëª© ì¼ì • ì¤‘ë³µ í™•ì¸
     ELSIF FN_OS_J2(P_OSCODE,P_OCCODE,P_START,P_END) = 1
         THEN RAISE USER_ERROR2;
-    --±³¼öÀÚ Áßº¹ È®ÀÎ
+    --êµìˆ˜ìž ì¤‘ë³µ í™•ì¸
     ELSIF FN_OS_G2(P_OSCODE,P_PFID,P_START,P_END) = 1
         THEN RAISE USER_ERROR3;
     END IF;
@@ -1683,14 +1683,14 @@ BEGIN
     
      EXCEPTION
         WHEN USER_ERROR1
-            THEN RAISE_APPLICATION_ERROR(-20015,'°³¼³°úÁ¤³» ÀÏ½Ã¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä');
+            THEN RAISE_APPLICATION_ERROR(-20015,'ê°œì„¤ê³¼ì •ë‚´ ì¼ì‹œë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”');
         WHEN USER_ERROR2
-            THEN RAISE_APPLICATION_ERROR(-20016,'±âÁ¸ µî·ÏµÈ °ú¸ñ°ú °­ÀÇ ÀÏÀÚ°¡ °ãÄ¥¼ö ¾ø½À´Ï´Ù');
+            THEN RAISE_APPLICATION_ERROR(-20016,'ê¸°ì¡´ ë“±ë¡ëœ ê³¼ëª©ê³¼ ê°•ì˜ ì¼ìžê°€ ê²¹ì¹ ìˆ˜ ì—†ìŠµë‹ˆë‹¤');
         WHEN USER_ERROR3
-            THEN RAISE_APPLICATION_ERROR(-20017,'±³¼öÀÚ´Â ÇÑ°³ÀÇ °­ÀÇ¸¸ °¡´ÉÇÕ´Ï´Ù');
+            THEN RAISE_APPLICATION_ERROR(-20017,'êµìˆ˜ìžëŠ” í•œê°œì˜ ê°•ì˜ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤');
 END;
 
--- °ü¸®ÀÚ,±³¼ö ¹èÁ¡ µî·Ï
+-- ê´€ë¦¬ìž,êµìˆ˜ ë°°ì  ë“±ë¡
 CREATE OR REPLACE PROCEDURE PRC_OS_UB
 (
  P_OSCODE OPEN_SUB.OC_CODE%TYPE
@@ -1699,7 +1699,7 @@ CREATE OR REPLACE PROCEDURE PRC_OS_UB
 ,P_PRC  OPEN_SUB.PRC_WEIGHT%TYPE
 )
 IS
-    USER_ERROR EXCEPTION;   -- ¹èÁ¡ÃÑÇÕÀÌ 100ÀÌ ¾Æ´Ñ °æ¿ì ¿¡·¯
+    USER_ERROR EXCEPTION;   -- ë°°ì ì´í•©ì´ 100ì´ ì•„ë‹Œ ê²½ìš° ì—ëŸ¬
 BEGIN
     
     IF (P_ATT+P_WRT+P_PRC != 100)
@@ -1716,17 +1716,17 @@ BEGIN
     
     EXCEPTION
         WHEN USER_ERROR
-            THEN RAISE_APPLICATION_ERROR(-20036,'¹èÁ¡ÀÇ ¹èÀ²ÀÌ 100ÀÌ µÇÁö¾Ê¾Æ ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù');
+            THEN RAISE_APPLICATION_ERROR(-20036,'ë°°ì ì˜ ë°°ìœ¨ì´ 100ì´ ë˜ì§€ì•Šì•„ ìž…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤');
                  
 END;
 
--- °³¼³ °ú¸ñ »èÁ¦
+-- ê°œì„¤ ê³¼ëª© ì‚­ì œ
 CREATE OR REPLACE PROCEDURE PRC_OS_D
 (
 P_OSCODE OPEN_SUB.OS_CODE%TYPE
 )
 IS
-    USER_ERROR EXCEPTION;   -- »èÁ¦ÇÏ·Á´Â °³¼³°ú¸ñÀÌ ÀÌ¹Ì ½ÃÀÛµÆÀ¸¸é ¿¡·¯
+    USER_ERROR EXCEPTION;   -- ì‚­ì œí•˜ë ¤ëŠ” ê°œì„¤ê³¼ëª©ì´ ì´ë¯¸ ì‹œìž‘ëìœ¼ë©´ ì—ëŸ¬
     V_OCCODE OPEN_COURSE.OC_CODE%TYPE;
     V_DATE OPEN_SUB.OS_SDATE%TYPE;
 BEGIN
@@ -1738,7 +1738,7 @@ BEGIN
     FROM OPEN_COURSE
     WHERE OC_CODE = V_OCCODE;
     
-    -- °³¼³°úÁ¤ÀÏ È®ÀÎ
+    -- ê°œì„¤ê³¼ì •ì¼ í™•ì¸
     IF (SYSDATE > V_DATE)
         THEN RAISE USER_ERROR;
     END IF;
@@ -1751,11 +1751,11 @@ BEGIN
     
     EXCEPTION
         WHEN USER_ERROR
-            THEN RAISE_APPLICATION_ERROR(-20037,'°³¼³ °úÁ¤ ½ÃÀÛÀÏÀÌ Áö³ª ¼¼ºÎ°ú¸ñÀ» »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù');
+            THEN RAISE_APPLICATION_ERROR(-20037,'ê°œì„¤ ê³¼ì • ì‹œìž‘ì¼ì´ ì§€ë‚˜ ì„¸ë¶€ê³¼ëª©ì„ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤');
                  --ROLLBACK;
 END;
 
--- Áßµµ Å»¶ô »ý¼º
+-- ì¤‘ë„ íƒˆë½ ìƒì„±
 CREATE OR REPLACE PROCEDURE PRC_DO_C
 (
  P_ERCODE    DROP_OUT.ER_CODE%TYPE
@@ -1777,9 +1777,9 @@ BEGIN
     
     
     IF SYSDATE > V_EDATE
-        THEN RAISE_APPLICATION_ERROR(-20038,'¼ö°­ÀÌ ¿Ï·áµÈ ÇÐ»ýÀ¸·Î ÁßµµÅ»¶ôÀÌ ºÒ°¡ ÇÕ´Ï´Ù');
+        THEN RAISE_APPLICATION_ERROR(-20038,'ìˆ˜ê°•ì´ ì™„ë£Œëœ í•™ìƒìœ¼ë¡œ ì¤‘ë„íƒˆë½ì´ ë¶ˆê°€ í•©ë‹ˆë‹¤');
     ELSIF SYSDATE < V_SDATE
-        THEN RAISE_APPLICATION_ERROR(-20040,'¼ö°­Àü »óÅÂÀÎ ÇÐ»ýÀÓÀ¸·Î ÁßµµÅ»¶ôÀÌ ºÒ°¡ ÇÕ´Ï´Ù');
+        THEN RAISE_APPLICATION_ERROR(-20040,'ìˆ˜ê°•ì „ ìƒíƒœì¸ í•™ìƒìž„ìœ¼ë¡œ ì¤‘ë„íƒˆë½ì´ ë¶ˆê°€ í•©ë‹ˆë‹¤');
     END IF;
     
     INSERT INTO DROP_OUT(DO_CODE,ER_CODE,DO_DATE,DR_CODE)
@@ -1790,7 +1790,7 @@ BEGIN
     
 END;
 
--- ÁßµµÅ»¶ô ¼öÁ¤
+-- ì¤‘ë„íƒˆë½ ìˆ˜ì •
 CREATE OR REPLACE PROCEDURE PRC_DO_U
 (
  P_DOCODE   DROP_OUT.DO_CODE%TYPE
@@ -1814,9 +1814,9 @@ BEGIN
     
     
     IF SYSDATE > V_EDATE
-        THEN RAISE_APPLICATION_ERROR(-20029,'¼ö°­ÀÌ ¿Ï·áµÈ ÇÐ»ýÀ¸·Î ÁßµµÅ»¶ôÀÌ ºÒ°¡ ÇÕ´Ï´Ù');
+        THEN RAISE_APPLICATION_ERROR(-20029,'ìˆ˜ê°•ì´ ì™„ë£Œëœ í•™ìƒìœ¼ë¡œ ì¤‘ë„íƒˆë½ì´ ë¶ˆê°€ í•©ë‹ˆë‹¤');
     ELSIF SYSDATE < V_SDATE
-        THEN RAISE_APPLICATION_ERROR(-20040,'¼ö°­Àü »óÅÂÀÎ ÇÐ»ýÀÓÀ¸·Î ÁßµµÅ»¶ôÀÌ ºÒ°¡ ÇÕ´Ï´Ù');
+        THEN RAISE_APPLICATION_ERROR(-20040,'ìˆ˜ê°•ì „ ìƒíƒœì¸ í•™ìƒìž„ìœ¼ë¡œ ì¤‘ë„íƒˆë½ì´ ë¶ˆê°€ í•©ë‹ˆë‹¤');
     END IF;
     
     UPDATE DROP_OUT
@@ -1829,7 +1829,7 @@ BEGIN
     
 END;
 
--- ÁßµµÅ»¶ô »èÁ¦
+-- ì¤‘ë„íƒˆë½ ì‚­ì œ
 CREATE OR REPLACE PROCEDURE PRC_DO_D
 (
 P_DOCODE   DROP_OUT.DO_CODE%TYPE
@@ -1855,7 +1855,7 @@ BEGIN
     AND V_DATE <= OS_EDATE;
     
     IF V_SDATE < SYSDATE
-        THEN RAISE_APPLICATION_ERROR(-20039,'ÁßµµÅ»¶ô Ãë¼Ò°¡ ºÒ°¡´ÉÇÕ´Ï´Ù');
+        THEN RAISE_APPLICATION_ERROR(-20039,'ì¤‘ë„íƒˆë½ ì·¨ì†Œê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤');
     END IF;
 
     DELETE
@@ -1867,13 +1867,13 @@ BEGIN
 END;
 
 
--- ÇÁ·Î½ÃÀú »ý¼º
--- ÇÁ·Î½ÃÀú¸í: PRC_GR_C
--- GRADE Å×ÀÌºí¿¡ INSERT - °ü¸®ÀÚ, ±³¼öÀÚ¸¸ °¡´É (·Î±×ÀÎ¾ÆÀÌµð, ¼ö°­½ÅÃ»ÄÚµå, °³¼³°ú¸ñÄÚµå, Ãâ°áÁ¡¼ö, ÇÊ±âÁ¡¼ö, ½Ç±âÁ¡¼ö)
--- ±³¼öÀÚ°¡ º»ÀÎ °ú¸ñ¿¡ ÇÑÇØ¼­¸¸ »ý¼º°¡´É
--- ÁßµµÅ»¶ô ÇÐ»ý Á¦¿Ü
--- ¼ö°­½ÅÃ»ÀÇ ¼ö°­½ÅÃ»ÄÚµå°¡ ÁßµµÅ»¶ô ÁßµµÅ»¶ô Å×ÀÌºí¿¡ Á¸ÀçÇÒ °æ¿ì Å»¶ô ÀÏÀÚ¸¦ È®ÀÎ
--- Å»¶ôÀÏÀÚ°¡ °³¼³°ú¸ñÀÇ Á¾·áÀÏ½Ãº¸´Ù ºü¸¥°æ¿ì´Â »ý¼ººÒ°¡
+-- í”„ë¡œì‹œì € ìƒì„±
+-- í”„ë¡œì‹œì €ëª…: PRC_GR_C
+-- GRADE í…Œì´ë¸”ì— INSERT - ê´€ë¦¬ìž, êµìˆ˜ìžë§Œ ê°€ëŠ¥ (ë¡œê·¸ì¸ì•„ì´ë””, ìˆ˜ê°•ì‹ ì²­ì½”ë“œ, ê°œì„¤ê³¼ëª©ì½”ë“œ, ì¶œê²°ì ìˆ˜, í•„ê¸°ì ìˆ˜, ì‹¤ê¸°ì ìˆ˜)
+-- êµìˆ˜ìžê°€ ë³¸ì¸ ê³¼ëª©ì— í•œí•´ì„œë§Œ ìƒì„±ê°€ëŠ¥
+-- ì¤‘ë„íƒˆë½ í•™ìƒ ì œì™¸
+-- ìˆ˜ê°•ì‹ ì²­ì˜ ìˆ˜ê°•ì‹ ì²­ì½”ë“œê°€ ì¤‘ë„íƒˆë½ ì¤‘ë„íƒˆë½ í…Œì´ë¸”ì— ì¡´ìž¬í•  ê²½ìš° íƒˆë½ ì¼ìžë¥¼ í™•ì¸
+-- íƒˆë½ì¼ìžê°€ ê°œì„¤ê³¼ëª©ì˜ ì¢…ë£Œì¼ì‹œë³´ë‹¤ ë¹ ë¥¸ê²½ìš°ëŠ” ìƒì„±ë¶ˆê°€
 CREATE OR REPLACE PROCEDURE PRC_GR_C_PF
 (
  P_LOGIN_ID    IN  PROF.PF_ID%TYPE
@@ -1887,10 +1887,10 @@ BEGIN
     V_LOGIN_ID := SUBSTR(P_LOGIN_ID,1,2);
     
     IF (V_LOGIN_ID = 'PF') THEN
-        -- ¿À´Ã ³¯Â¥¿Í °ú¸ñÀÇ Á¾·á ³¯Â¥¸¦ ºñ±³ÇØ¼­ 
-        -- SYSDATEº¸´Ù Á¾·á³¯Â¥°¡ ÀÌÀüÀÎ °Íµé¸¸ »ý¼º °¡´ÉÇÏ°Ô ¼³Á¤
+        -- ì˜¤ëŠ˜ ë‚ ì§œì™€ ê³¼ëª©ì˜ ì¢…ë£Œ ë‚ ì§œë¥¼ ë¹„êµí•´ì„œ 
+        -- SYSDATEë³´ë‹¤ ì¢…ë£Œë‚ ì§œê°€ ì´ì „ì¸ ê²ƒë“¤ë§Œ ìƒì„± ê°€ëŠ¥í•˜ê²Œ ì„¤ì •
 
-         -- ÁßµµÅ»¶ôÀÚ°¡ ¾Æ´Ï¸é¼­ ±³¼öÀÚÀÇ °ú¸ñÀÎ ÄÃ·³µé 
+         -- ì¤‘ë„íƒˆë½ìžê°€ ì•„ë‹ˆë©´ì„œ êµìˆ˜ìžì˜ ê³¼ëª©ì¸ ì»¬ëŸ¼ë“¤ 
         FOR REC IN ( SELECT OS.OS_CODE, ER.ER_CODE, OS.OS_EDATE
                      FROM OPEN_SUB OS JOIN ENROLLMENT ER
                         ON ER.OC_CODE = OS.OC_CODE
@@ -1902,8 +1902,8 @@ BEGIN
                                           AND DO.DO_DATE <= OS.OS_EDATE)
                                        ) LOOP
 
-            -- Áßº¹ »ý¼º ¹æÁö
-            -- ER_CODE, OS_CODE°¡ µ¿ÀÏÇÑ°Ô ÀÖ´Ù¸é »ý¼º¹æÁö
+            -- ì¤‘ë³µ ìƒì„± ë°©ì§€
+            -- ER_CODE, OS_CODEê°€ ë™ì¼í•œê²Œ ìžˆë‹¤ë©´ ìƒì„±ë°©ì§€
             SELECT COUNT(*) INTO V_DUP_CNT
             FROM GRADE
             WHERE ER_CODE = REC.ER_CODE AND OS_CODE = REC.OS_CODE;
@@ -1912,7 +1912,7 @@ BEGIN
                 CONTINUE;
             END IF;
 
-            -- µ¥ÀÌÅÍ »ðÀÔ
+            -- ë°ì´í„° ì‚½ìž…
             INSERT INTO GRADE(GR_CODE, ER_CODE, OS_CODE)
             VALUES('GR'||LPAD(GR_SEQ.NEXTVAL, 3, '0'), REC.ER_CODE, REC.OS_CODE);
 
@@ -1925,7 +1925,7 @@ BEGIN
     
     EXCEPTION
         WHEN USER_DEFINE_ERROR1 THEN
-            RAISE_APPLICATION_ERROR(-20009, '±ÇÇÑÀÌ ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20009, 'ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤.');
 END;
 
 CREATE OR REPLACE PROCEDURE PRC_GR_C_AD
@@ -1960,7 +1960,7 @@ BEGIN
     
     IF (V_LOGIN_ID = 'AD') THEN
     
-        -- °ú¸ñ Á¾·áÀÏ Ã¼Å©
+        -- ê³¼ëª© ì¢…ë£Œì¼ ì²´í¬
         SELECT OS_EDATE INTO V_EDATE
         FROM OPEN_SUB
         WHERE OS_CODE = P_OS_CODE;
@@ -1969,7 +1969,7 @@ BEGIN
             RAISE USER_DEFINE_ERROR6;
         END IF;
 
-         -- ¼ºÀûÅ×ÀÌºí¿¡ Áßº¹µ¥ÀÌÅÍ Á¸Àç ½Ã ¿¹¿ÜÃ³¸®
+         -- ì„±ì í…Œì´ë¸”ì— ì¤‘ë³µë°ì´í„° ì¡´ìž¬ ì‹œ ì˜ˆì™¸ì²˜ë¦¬
         SELECT COUNT(*) INTO V_DUP_CNT
         FROM GRADE
         WHERE ER_CODE = P_ER_CODE AND OS_CODE = P_OS_CODE;
@@ -1979,12 +1979,12 @@ BEGIN
         END IF;
         
         
-        -- P_OS_CODE¿Í P_ER_CODE°¡ ½ÇÁ¦·Î ¼­·Î °ü°è°¡ ÀÖ´ÂÁö È®ÀÎ
-        -- °³¼³°ú¸ñÄÚµå ¼ö°­½ÅÃ»ÄÚµå
-        -- ¼ö°­½ÅÃ»Å×ÀÌºí¿¡ ÆÄ¶ó¹ÌÅÍ¼ö°­½ÅÃ»ÄÚµå¿Í °°Àº ¼ö°­½ÅÃ»ÄÚµå¿¡¼­ °³¼³°úÁ¤À» °¡Á®¿À°í
-        -- ±× °³¼³°úÁ¤ÄÚµå°¡ °³¼³°ú¸ñ¿¡ µé¾îÀÖ´Â °Í Áß¿¡ ÆÄ¶ó¹ÌÅÍ·Î ¹ÞÀº °³¼³°ú¸ñÄÚµå°¡ ÀÖ´ÂÁö È®ÀÎ
+        -- P_OS_CODEì™€ P_ER_CODEê°€ ì‹¤ì œë¡œ ì„œë¡œ ê´€ê³„ê°€ ìžˆëŠ”ì§€ í™•ì¸
+        -- ê°œì„¤ê³¼ëª©ì½”ë“œ ìˆ˜ê°•ì‹ ì²­ì½”ë“œ
+        -- ìˆ˜ê°•ì‹ ì²­í…Œì´ë¸”ì— íŒŒë¼ë¯¸í„°ìˆ˜ê°•ì‹ ì²­ì½”ë“œì™€ ê°™ì€ ìˆ˜ê°•ì‹ ì²­ì½”ë“œì—ì„œ ê°œì„¤ê³¼ì •ì„ ê°€ì ¸ì˜¤ê³ 
+        -- ê·¸ ê°œì„¤ê³¼ì •ì½”ë“œê°€ ê°œì„¤ê³¼ëª©ì— ë“¤ì–´ìžˆëŠ” ê²ƒ ì¤‘ì— íŒŒë¼ë¯¸í„°ë¡œ ë°›ì€ ê°œì„¤ê³¼ëª©ì½”ë“œê°€ ìžˆëŠ”ì§€ í™•ì¸
         
-        -- µ¥ÀÌÅÍ ¾øÀ» ¶§ ¿¹¿ÜÃ³¸® 
+        -- ë°ì´í„° ì—†ì„ ë•Œ ì˜ˆì™¸ì²˜ë¦¬ 
         SELECT COUNT(*)  INTO V_ER_CNT
         FROM ENROLLMENT
         WHERE ER_CODE = P_ER_CODE;
@@ -2004,29 +2004,29 @@ BEGIN
         END IF;
         
         
-        -- ¼ö°­½ÅÃ»Å×ÀÌºí¿¡¼­ ÆÄ¶ó¹ÌÅÍ·Î ¹ÞÀº ER_CODE¿Í °°Àº Çà¿¡¼­ OC_CODE ºÒ·¯¿À±â
+        -- ìˆ˜ê°•ì‹ ì²­í…Œì´ë¸”ì—ì„œ íŒŒë¼ë¯¸í„°ë¡œ ë°›ì€ ER_CODEì™€ ê°™ì€ í–‰ì—ì„œ OC_CODE ë¶ˆëŸ¬ì˜¤ê¸°
         SELECT OC_CODE  INTO V_OC_CODE
         FROM ENROLLMENT
         WHERE ER_CODE = P_ER_CODE;
    
-        -- °³¼³°ú¸ñÄÚµåµé
+        -- ê°œì„¤ê³¼ëª©ì½”ë“œë“¤
         FOR R_OS_CODE IN ( SELECT OS_CODE 
                            FROM OPEN_SUB
                            WHERE OC_CODE = V_OC_CODE
                           ) LOOP
-            -- °³¼³°ú¸ñÄÚµå¿Í ÆÄ¶ó¹ÌÅÍ°³¼³°ú¸ñÄÚµå°¡ °°Àº °Ô ÇÏ³ª¶óµµ ÀÖÀ¸¸é TRUE 
+            -- ê°œì„¤ê³¼ëª©ì½”ë“œì™€ íŒŒë¼ë¯¸í„°ê°œì„¤ê³¼ëª©ì½”ë“œê°€ ê°™ì€ ê²Œ í•˜ë‚˜ë¼ë„ ìžˆìœ¼ë©´ TRUE 
             IF R_OS_CODE.OS_CODE = P_OS_CODE    THEN
                 V_FLAG := TRUE;
                 EXIT;
             END IF;   
         END LOOP;
         
-        -- °³¼³°ú¸ñÄÚµå¿¡ ÆÄ¶ó¹ÌÅÍ°³¼³°ú¸ñÄÚµå°¡ °°Àº°Ô ¾ø´Ù¸é ¿¹¿ÜÃ³¸®
+        -- ê°œì„¤ê³¼ëª©ì½”ë“œì— íŒŒë¼ë¯¸í„°ê°œì„¤ê³¼ëª©ì½”ë“œê°€ ê°™ì€ê²Œ ì—†ë‹¤ë©´ ì˜ˆì™¸ì²˜ë¦¬
         IF NOT V_FLAG THEN
             RAISE USER_DEFINE_ERROR5;
         END IF;
         
-          -- ÁßµµÅ»¶ô ÇÐ»ý ¿¹¿ÜÃ³¸®           
+          -- ì¤‘ë„íƒˆë½ í•™ìƒ ì˜ˆì™¸ì²˜ë¦¬           
                 SELECT OS_EDATE INTO V_OS_EDATE
                 FROM OPEN_SUB
                 WHERE OS_CODE = P_OS_CODE;
@@ -2057,17 +2057,17 @@ BEGIN
     
     EXCEPTION
         WHEN USER_DEFINE_ERROR1 THEN
-            RAISE_APPLICATION_ERROR(-20006, 'µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20006, 'ë°ì´í„°ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         WHEN USER_DEFINE_ERROR2 THEN
-            RAISE_APPLICATION_ERROR(-20009, '±ÇÇÑÀÌ ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20009, 'ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤.');
         WHEN USER_DEFINE_ERROR3 THEN
-            RAISE_APPLICATION_ERROR(-20010, 'À¯È¿ÇÏÁö ¾ÊÀº ÆÄ¶ó¹ÌÅÍÀÔ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20010, 'ìœ íš¨í•˜ì§€ ì•Šì€ íŒŒë¼ë¯¸í„°ìž…ë‹ˆë‹¤.');
         WHEN USER_DEFINE_ERROR4 THEN
-            RAISE_APPLICATION_ERROR(-20011, 'ÁßµµÅ»¶ôÇÑ ÇÐ»ýÀÔ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20011, 'ì¤‘ë„íƒˆë½í•œ í•™ìƒìž…ë‹ˆë‹¤.');
         WHEN USER_DEFINE_ERROR5 THEN
-            RAISE_APPLICATION_ERROR(-20012, 'À¯È¿ÇÑ °³¼³°ú¸ñÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20012, 'ìœ íš¨í•œ ê°œì„¤ê³¼ëª©ì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         WHEN USER_DEFINE_ERROR6 THEN
-            RAISE_APPLICATION_ERROR(-20029, '¼±ÅÃÇÑ °ú¸ñÀº Á¾·áµÇÁö ¾Ê¾Ò½À´Ï´Ù.');  
+            RAISE_APPLICATION_ERROR(-20029, 'ì„ íƒí•œ ê³¼ëª©ì€ ì¢…ë£Œë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.');  
 END;
 
 CREATE OR REPLACE PROCEDURE PRC_GR_U
@@ -2096,9 +2096,9 @@ BEGIN
     WHERE GR_CODE = P_GR_CODE;
     
     
-    -- ±³¼öÀÏ ¶§
+    -- êµìˆ˜ì¼ ë•Œ
     IF(V_LOGIN_ID = 'PF') THEN
-        -- ÀÔ·ÂÇÑ ¼ºÀûÄÚµå°¡ º»ÀÎ ´ã´çÀÎÁö È®ÀÎ ÈÄ ¾÷µ¥ÀÌÆ®
+        -- ìž…ë ¥í•œ ì„±ì ì½”ë“œê°€ ë³¸ì¸ ë‹´ë‹¹ì¸ì§€ í™•ì¸ í›„ ì—…ë°ì´íŠ¸
         
         SELECT PF_ID    INTO V_PF_ID
         FROM OPEN_SUB
@@ -2114,10 +2114,10 @@ BEGIN
         WHERE GR_CODE = P_GR_CODE;
     
         IF SQL%ROWCOUNT > 0 THEN
-            DBMS_OUTPUT.PUT_LINE('Á¤»óÀûÀ¸·Î ¾÷µ¥ÀÌÆ® µÇ¾ú½À´Ï´Ù.');
+            DBMS_OUTPUT.PUT_LINE('ì •ìƒì ìœ¼ë¡œ ì—…ë°ì´íŠ¸ ë˜ì—ˆìŠµë‹ˆë‹¤.');
         END IF;
     
-    -- °ü¸®ÀÚÀÏ ¶§
+    -- ê´€ë¦¬ìžì¼ ë•Œ
     ELSIF (V_LOGIN_ID = 'AD') THEN
     
         UPDATE GRADE 
@@ -2125,10 +2125,10 @@ BEGIN
         WHERE GR_CODE = P_GR_CODE;
         
         IF SQL%ROWCOUNT > 0 THEN
-            DBMS_OUTPUT.PUT_LINE('Á¤»óÀûÀ¸·Î ¾÷µ¥ÀÌÆ® µÇ¾ú½À´Ï´Ù.');
+            DBMS_OUTPUT.PUT_LINE('ì •ìƒì ìœ¼ë¡œ ì—…ë°ì´íŠ¸ ë˜ì—ˆìŠµë‹ˆë‹¤.');
         END IF;
     
-    -- ±ÇÇÑ¾ø´Â °èÁ¤ÀÏ ¶§
+    -- ê¶Œí•œì—†ëŠ” ê³„ì •ì¼ ë•Œ
     ELSE
         RAISE USER_DEFINE_ERROR1;
     END IF;
@@ -2138,13 +2138,13 @@ BEGIN
     
     EXCEPTION
         WHEN USER_DEFINE_ERROR1 THEN
-            RAISE_APPLICATION_ERROR(-20009,'±ÇÇÑÀÌ ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20009,'ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤.');
         WHEN USER_DEFINE_ERROR2 THEN
-            RAISE_APPLICATION_ERROR(-20006,'µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20006,'ë°ì´í„°ê°€ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
         WHEN USER_DEFINE_ERROR3 THEN
-            RAISE_APPLICATION_ERROR(-20030,'º»ÀÎÀÇ ´ã´ç °ú¸ñÀÌ ¾Æ´Õ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20030,'ë³¸ì¸ì˜ ë‹´ë‹¹ ê³¼ëª©ì´ ì•„ë‹™ë‹ˆë‹¤.');
         WHEN NO_DATA_FOUND THEN
-            RAISE_APPLICATION_ERROR(-20031, 'À¯È¿ÇÏÁö ¾ÊÀº ¼ºÀûÄÚµåÀÔ´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20031, 'ìœ íš¨í•˜ì§€ ì•Šì€ ì„±ì ì½”ë“œìž…ë‹ˆë‹¤.');
 END;
 
 
@@ -2169,13 +2169,13 @@ BEGIN
     
     EXCEPTION
         WHEN USER_DEFINE_ERROR1 THEN
-            RAISE_APPLICATION_ERROR(-20009,'±ÇÇÑÀÌ ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20009,'ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤.');
         WHEN USER_DEFINE_ERROR2 THEN
-            RAISE_APPLICATION_ERROR(-20013,'»èÁ¦ÇÒ ¼ö ÀÖ´Â ¼ºÀûÀÌ ¾ø½À´Ï´Ù.');
+            RAISE_APPLICATION_ERROR(-20013,'ì‚­ì œí•  ìˆ˜ ìžˆëŠ” ì„±ì ì´ ì—†ìŠµë‹ˆë‹¤.');
 END;
 
 
--- ¼ö°­½ÅÃ» »ý¼º
+-- ìˆ˜ê°•ì‹ ì²­ ìƒì„±
 CREATE OR REPLACE PROCEDURE PRC_ER_C
 (
   P_OC_CODE IN ENROLLMENT.OC_CODE%TYPE,
@@ -2188,44 +2188,44 @@ IS
     V_OC_SDATE   DATE;
     
 BEGIN  
-    -- °³¼³°úÁ¤ Á¸Àç ¹× ½ÃÀÛÀÏ È®ÀÎ
+    -- ê°œì„¤ê³¼ì • ì¡´ìž¬ ë° ì‹œìž‘ì¼ í™•ì¸
     SELECT COUNT(*)
     INTO V_OC_CNT
     FROM OPEN_COURSE
     WHERE OC_CODE = P_OC_CODE;
     
     IF V_OC_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20023, 'Á¸ÀçÇÏÁö ¾Ê´Â °³¼³°úÁ¤ÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20023, 'ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ê°œì„¤ê³¼ì •ìž…ë‹ˆë‹¤.');
     END IF;
     
-    -- ¼ö°­½ÅÃ»³¯Â¥°¡ °³¼³°úÁ¤ ½ÃÀÛÀÏº¸´Ù ÀÛ¾Æ¾ßÇÔ
-    -- °³¼³°úÁ¤ÀÌ ¿­¸®°í ±× ÀÌÈÄ¿¡ ¼ö°­½ÅÃ» °¡´É
+    -- ìˆ˜ê°•ì‹ ì²­ë‚ ì§œê°€ ê°œì„¤ê³¼ì • ì‹œìž‘ì¼ë³´ë‹¤ ìž‘ì•„ì•¼í•¨
+    -- ê°œì„¤ê³¼ì •ì´ ì—´ë¦¬ê³  ê·¸ ì´í›„ì— ìˆ˜ê°•ì‹ ì²­ ê°€ëŠ¥
     SELECT OC_SDATE INTO V_OC_SDATE
     FROM OPEN_COURSE
     WHERE OC_CODE = P_OC_CODE;
     
-    -- ½ÃÀÛ °úÁ¤ È®ÀÎ
+    -- ì‹œìž‘ ê³¼ì • í™•ì¸
     IF V_OC_SDATE < SYSDATE THEN
-        RAISE_APPLICATION_ERROR(-20024, '½ÃÀÛµÈ °úÁ¤¿¡´Â ¼ö°­½ÅÃ»ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20024, 'ì‹œìž‘ëœ ê³¼ì •ì—ëŠ” ìˆ˜ê°•ì‹ ì²­í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
     END IF;
     
-    -- ÇÐ»ý Á¸Àç È®ÀÎ
+    -- í•™ìƒ ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_ST_CNT
     FROM STUD
     WHERE ST_ID = P_ST_ID;
 
     IF V_ST_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20025, 'Á¸ÀçÇÏÁö ¾Ê´Â ÇÐ»ýÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20025, 'ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” í•™ìƒìž…ë‹ˆë‹¤.');
     END IF;
      
-    -- Áßº¹ ¼ö°­½ÅÃ» È®ÀÎ
+    -- ì¤‘ë³µ ìˆ˜ê°•ì‹ ì²­ í™•ì¸
     SELECT COUNT(*) INTO V_DUP_CNT
     FROM ENROLLMENT 
     WHERE OC_CODE = P_OC_CODE
       AND ST_ID = P_ST_ID;
      
     IF V_DUP_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20026, 'ÀÌ¹Ì ¼ö°­½ÅÃ»ÇÑ °úÁ¤ÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20026, 'ì´ë¯¸ ìˆ˜ê°•ì‹ ì²­í•œ ê³¼ì •ìž…ë‹ˆë‹¤.');
     END IF;
      
     INSERT INTO ENROLLMENT (ER_CODE, OC_CODE, ST_ID)
@@ -2235,7 +2235,7 @@ BEGIN
     
 END;
 
--- ¼ö°­½ÅÃ» ¼öÁ¤
+-- ìˆ˜ê°•ì‹ ì²­ ìˆ˜ì •
 CREATE OR REPLACE PROCEDURE PRC_ER_U
 (
   P_ER_CODE IN ENROLLMENT.ER_CODE%TYPE,
@@ -2247,30 +2247,30 @@ IS
   V_DUP_CNT  NUMBER;
   V_ST_ID    STUD.ST_ID%TYPE;
 BEGIN
-    -- ¼ö°­½ÅÃ» Á¸Àç È®ÀÎ
+    -- ìˆ˜ê°•ì‹ ì²­ ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_ER_CNT
     FROM ENROLLMENT
     WHERE ER_CODE = P_ER_CODE;
 
     IF V_ER_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20027, 'Á¸ÀçÇÏÁö ¾Ê´Â ¼ö°­½ÅÃ»ÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20027, 'ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ìˆ˜ê°•ì‹ ì²­ìž…ë‹ˆë‹¤.');
     END IF;
 
-    -- º¯°æÇÒ °³¼³°úÁ¤ Á¸Àç È®ÀÎ
+    -- ë³€ê²½í•  ê°œì„¤ê³¼ì • ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_OC_CNT
     FROM OPEN_COURSE
     WHERE OC_CODE = P_OC_CODE;
 
     IF V_OC_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20020, '¼öÁ¤ÇÒ °³¼³°úÁ¤ÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20020, 'ìˆ˜ì •í•  ê°œì„¤ê³¼ì •ì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
 
-    -- ÇöÀç ¼ö°­½ÅÃ»ÀÇ ÇÐ»ýID Á¶È¸
+    -- í˜„ìž¬ ìˆ˜ê°•ì‹ ì²­ì˜ í•™ìƒID ì¡°íšŒ
     SELECT ST_ID INTO V_ST_ID
     FROM ENROLLMENT
     WHERE ER_CODE = P_ER_CODE;
 
-    -- Áßº¹ ¼ö°­ È®ÀÎ (°°Àº ÇÐ»ýÀÌ ÀÌ¹Ì ÇØ´ç °úÁ¤ ¼ö°­ ÁßÀÎÁö)
+    -- ì¤‘ë³µ ìˆ˜ê°• í™•ì¸ (ê°™ì€ í•™ìƒì´ ì´ë¯¸ í•´ë‹¹ ê³¼ì • ìˆ˜ê°• ì¤‘ì¸ì§€)
     SELECT COUNT(*) INTO V_DUP_CNT
     FROM ENROLLMENT
     WHERE OC_CODE = P_OC_CODE
@@ -2278,7 +2278,7 @@ BEGIN
       AND ER_CODE = P_ER_CODE;
 
     IF V_DUP_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20026, 'ÀÌ¹Ì ¼ö°­½ÅÃ»ÇÑ °úÁ¤ÀÔ´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20026, 'ì´ë¯¸ ìˆ˜ê°•ì‹ ì²­í•œ ê³¼ì •ìž…ë‹ˆë‹¤.');
     END IF;
 
     UPDATE ENROLLMENT
@@ -2288,11 +2288,11 @@ BEGIN
     COMMIT;
     
     IF SQL%ROWCOUNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20004, '¼öÁ¤ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20004, 'ìˆ˜ì • ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
 END;
 
--- ¼ö°­½ÅÃ» »èÁ¦
+-- ìˆ˜ê°•ì‹ ì²­ ì‚­ì œ
 CREATE OR REPLACE PROCEDURE PRC_ER_D
 (
   P_ER_CODE IN ENROLLMENT.ER_CODE%TYPE
@@ -2302,27 +2302,27 @@ IS
     V_DROP_CNT  NUMBER;
     V_GRADE_CNT NUMBER;
 BEGIN    
-    -- ¼ö°­½ÅÃ» Á¸Àç È®ÀÎ
+    -- ìˆ˜ê°•ì‹ ì²­ ì¡´ìž¬ í™•ì¸
     SELECT COUNT(*) INTO V_ER_CNT
     FROM ENROLLMENT
     WHERE ER_CODE = P_ER_CODE;
 
     IF V_ER_CNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20005, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20005, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
 
-    -- ÁßµµÅ»¶ô µ¥ÀÌÅÍ È®ÀÎ
+    -- ì¤‘ë„íƒˆë½ ë°ì´í„° í™•ì¸
     SELECT COUNT(*) INTO V_DROP_CNT
     FROM DROP_OUT
     WHERE ER_CODE = P_ER_CODE; 
     
-    -- ¼ºÀû µ¥ÀÌÅÍ È®ÀÎ
+    -- ì„±ì  ë°ì´í„° í™•ì¸
     SELECT COUNT(*) INTO V_GRADE_CNT
     FROM GRADE
     WHERE ER_CODE = P_ER_CODE;
      
     IF V_DROP_CNT > 0 OR V_GRADE_CNT > 0 THEN
-        RAISE_APPLICATION_ERROR(-20028, 'ÁßµµÅ»¶ô ¶Ç´Â ¼ºÀû µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏ¿© »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20028, 'ì¤‘ë„íƒˆë½ ë˜ëŠ” ì„±ì  ë°ì´í„°ê°€ ì¡´ìž¬í•˜ì—¬ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.');
     END IF;
     
     DELETE FROM ENROLLMENT
@@ -2331,7 +2331,7 @@ BEGIN
     COMMIT;
     
     IF SQL%ROWCOUNT = 0 THEN
-        RAISE_APPLICATION_ERROR(-20005, '»èÁ¦ ´ë»óÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.');
+        RAISE_APPLICATION_ERROR(-20005, 'ì‚­ì œ ëŒ€ìƒì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.');
     END IF;
     
 END;
@@ -2339,9 +2339,9 @@ END;
 
 
 
--- »ùÇÃµ¥ÀÌÅÍ ¸ðµÎ »èÁ¦ ---------------------------------------------------
+-- ìƒ˜í”Œë°ì´í„° ëª¨ë‘ ì‚­ì œ ---------------------------------------------------
 
---¡Û »ùÇÃµ¥ÀÌÅÍ Áö¿ì±â
+--â—‹ ìƒ˜í”Œë°ì´í„° ì§€ìš°ê¸°
 DELETE FROM GRADE;
 DELETE FROM DROP_OUT;
 DELETE FROM ENROLLMENT;
@@ -2374,88 +2374,88 @@ SELECT * FROM PROF;
 
 
 --------------------------------------------------------------------------------
--- ÇÁ·Î½ÃÀú µ¥ÀÌÅÍ »ðÀÔ ½ÇÇà ----------------------------------------------
---¡Û ÇÁ·Î½ÃÀú·Î µ¥ÀÌÅÍ ÀÔ·Â
+-- í”„ë¡œì‹œì € ë°ì´í„° ì‚½ìž… ì‹¤í–‰ ----------------------------------------------
+--â—‹ í”„ë¡œì‹œì €ë¡œ ë°ì´í„° ìž…ë ¥
 
--- 1. ADMIN_ROLE (°ü¸®ÀÚµî±Þ)
+-- 1. ADMIN_ROLE (ê´€ë¦¬ìžë“±ê¸‰)
 -- EXEC PRC_AR_CUD(MODE, AR_CODE, AR_NAME)
-EXEC PRC_AR_CUD('C','AR001','ÃÖÁ¾°ü¸®ÀÚ');
-EXEC PRC_AR_CUD('C','AR002','°ü¸®ÀÚ');
+EXEC PRC_AR_CUD('C','AR001','ìµœì¢…ê´€ë¦¬ìž');
+EXEC PRC_AR_CUD('C','AR002','ê´€ë¦¬ìž');
 
 SELECT * FROM ADMIN_ROLE;
 --==>>
 /*
-AR001	ÃÖÁ¾°ü¸®ÀÚ
-AR002	°ü¸®ÀÚ
+AR001	ìµœì¢…ê´€ë¦¬ìž
+AR002	ê´€ë¦¬ìž
 */
 
--- 2. CLASS (°­ÀÇ½Ç)
+-- 2. CLASS (ê°•ì˜ì‹¤)
 -- EXEC PRC_CL_CUD(MODE, CL_CODE, CL_NAME)
-EXEC PRC_CL_CUD('C','CL001','A°­ÀÇ½Ç');
-EXEC PRC_CL_CUD('C','CL002','B°­ÀÇ½Ç');
-EXEC PRC_CL_CUD('C','CL003','C°­ÀÇ½Ç');
+EXEC PRC_CL_CUD('C','CL001','Aê°•ì˜ì‹¤');
+EXEC PRC_CL_CUD('C','CL002','Bê°•ì˜ì‹¤');
+EXEC PRC_CL_CUD('C','CL003','Cê°•ì˜ì‹¤');
 
 SELECT * FROM CLASS;
 --==>>
 /*
-CL001	A°­ÀÇ½Ç
-CL002	B°­ÀÇ½Ç
-CL003	C°­ÀÇ½Ç
+CL001	Aê°•ì˜ì‹¤
+CL002	Bê°•ì˜ì‹¤
+CL003	Cê°•ì˜ì‹¤
 */
 
 
--- 3. DROP_REASON (Å»¶ô»çÀ¯)
+-- 3. DROP_REASON (íƒˆë½ì‚¬ìœ )
 -- EXEC PRC_DR_CUD(MODE, DR_CODE, DR_REASON)
-EXEC PRC_DR_CUD('C','DR001','°³ÀÎ»çÁ¤');
-EXEC PRC_DR_CUD('C','DR002','Ãë¾÷');
-EXEC PRC_DR_CUD('C','DR003','¹«´Ü°á¼®');
+EXEC PRC_DR_CUD('C','DR001','ê°œì¸ì‚¬ì •');
+EXEC PRC_DR_CUD('C','DR002','ì·¨ì—…');
+EXEC PRC_DR_CUD('C','DR003','ë¬´ë‹¨ê²°ì„');
 
 SELECT * FROM DROP_REASON;
 --==>>
 /*
-DR001	°³ÀÎ»çÁ¤
-DR002	Ãë¾÷
-DR003	¹«´Ü°á¼®
+DR001	ê°œì¸ì‚¬ì •
+DR002	ì·¨ì—…
+DR003	ë¬´ë‹¨ê²°ì„
 */
 
 
--- 4. TEXTBOOK (±³Àç)
+-- 4. TEXTBOOK (êµìž¬)
 -- EXEC PRC_TB_CUD(MODE, TB_CODE, TB_NAME)
-EXEC PRC_TB_CUD('C','TB001','Java ÀÔ¹®');
-EXEC PRC_TB_CUD('C','TB002','Spring Boot ½Ç½À');
-EXEC PRC_TB_CUD('C','TB003','SQL ±âº»');
-EXEC PRC_TB_CUD('C','TB004','HTML CSS °¡ÀÌµå');
-EXEC PRC_TB_CUD('C','TB005','JavaScript ÇÙ½É');
-EXEC PRC_TB_CUD('C','TB006','React ½ÇÀü');
+EXEC PRC_TB_CUD('C','TB001','Java ìž…ë¬¸');
+EXEC PRC_TB_CUD('C','TB002','Spring Boot ì‹¤ìŠµ');
+EXEC PRC_TB_CUD('C','TB003','SQL ê¸°ë³¸');
+EXEC PRC_TB_CUD('C','TB004','HTML CSS ê°€ì´ë“œ');
+EXEC PRC_TB_CUD('C','TB005','JavaScript í•µì‹¬');
+EXEC PRC_TB_CUD('C','TB006','React ì‹¤ì „');
 
 SELECT * FROM TEXTBOOK;
 --==>>
 /*
-TB001	Java ÀÔ¹®
-TB002	Spring Boot ½Ç½À
-TB003	SQL ±âº»
-TB004	HTML CSS °¡ÀÌµå
-TB005	JavaScript ÇÙ½É
-TB006	React ½ÇÀü
+TB001	Java ìž…ë¬¸
+TB002	Spring Boot ì‹¤ìŠµ
+TB003	SQL ê¸°ë³¸
+TB004	HTML CSS ê°€ì´ë“œ
+TB005	JavaScript í•µì‹¬
+TB006	React ì‹¤ì „
 */
 
 
 
--- 5. COURSE (°úÁ¤)
+-- 5. COURSE (ê³¼ì •)
 -- EXEC PRC_CR_C(CR_CODE, CR_NAME)
-EXEC PRC_CR_C('CR001','¹é¿£µå°úÁ¤');
-EXEC PRC_CR_C('CR002','ÇÁ·ÐÆ®¿£µå°úÁ¤');
-EXEC PRC_CR_C('CR003','Ç®½ºÅÃ°úÁ¤');
+EXEC PRC_CR_C('CR001','ë°±ì—”ë“œê³¼ì •');
+EXEC PRC_CR_C('CR002','í”„ë¡ íŠ¸ì—”ë“œê³¼ì •');
+EXEC PRC_CR_C('CR003','í’€ìŠ¤íƒê³¼ì •');
 
 SELECT * FROM COURSE;
 --==>>
 /*
-CR001	¹é¿£µå°úÁ¤
-CR002	ÇÁ·ÐÆ®¿£µå°úÁ¤
-CR003	Ç®½ºÅÃ°úÁ¤
+CR001	ë°±ì—”ë“œê³¼ì •
+CR002	í”„ë¡ íŠ¸ì—”ë“œê³¼ì •
+CR003	í’€ìŠ¤íƒê³¼ì •
 */
 
--- 6. SUB (°ú¸ñ)
+-- 6. SUB (ê³¼ëª©)
 -- EXEC PRC_SUB_CUD(MODE, SUB_CODE, SUB_NAME)
 EXEC PRC_SUB_CUD('C','SUB001','Java');
 EXEC PRC_SUB_CUD('C','SUB002','SQL');
@@ -2476,13 +2476,13 @@ SUB006	React
 */
 
 
--- 7. PROF (±³¼öÀÚ)
+-- 7. PROF (êµìˆ˜ìž)
 -- EXEC PRC_PF_C(PF_NAME, PF_SSN)
-EXEC PRC_PF_C('¹Ú±³¼ö','800101-1234567');
-EXEC PRC_PF_C('ÃÖ±³¼ö','810202-2345678');
-EXEC PRC_PF_C('±è±³¼ö','880914-2122333');
+EXEC PRC_PF_C('ë°•êµìˆ˜','800101-1234567');
+EXEC PRC_PF_C('ìµœêµìˆ˜','810202-2345678');
+EXEC PRC_PF_C('ê¹€êµìˆ˜','880914-2122333');
 
---¡Ø DEFAULT ³¯Â¥ ¼öÁ¤ UPDATE
+--â€» DEFAULT ë‚ ì§œ ìˆ˜ì • UPDATE
 UPDATE PROF SET PF_DATE = TO_DATE('2024-01-10','YYYY-MM-DD') WHERE PF_ID = 'PF100';
 UPDATE PROF SET PF_DATE = TO_DATE('2024-01-11','YYYY-MM-DD') WHERE PF_ID = 'PF101';
 UPDATE PROF SET PF_DATE = TO_DATE('2024-01-12','YYYY-MM-DD') WHERE PF_ID = 'PF102';
@@ -2490,23 +2490,23 @@ UPDATE PROF SET PF_DATE = TO_DATE('2024-01-12','YYYY-MM-DD') WHERE PF_ID = 'PF10
 SELECT * FROM PROF;
 --==>>
 /*
-PF100	¹Ú±³¼ö	800101-1234567	1234567	2024-01-10
-PF101	ÃÖ±³¼ö	810202-2345678	2345678	2024-01-11
-PF102	±è±³¼ö	880914-2122333	2122333	2024-01-12
+PF100	ë°•êµìˆ˜	800101-1234567	1234567	2024-01-10
+PF101	ìµœêµìˆ˜	810202-2345678	2345678	2024-01-11
+PF102	ê¹€êµìˆ˜	880914-2122333	2122333	2024-01-12
 */
 
 
 
--- 8. STUD (ÇÐ»ý)
+-- 8. STUD (í•™ìƒ)
 -- EXEC PRC_ST_C(ST_NAME,ST_SSN)
-EXEC PRC_ST_C('±èÇÐ»ý','000904-3123456');
-EXEC PRC_ST_C('À¯ÇÐ»ý','010101-4123456');
-EXEC PRC_ST_C('¹ÚÇÐ»ý','970202-1123456');
-EXEC PRC_ST_C('ÃÖÇÐ»ý','940515-1145677');
-EXEC PRC_ST_C('Á¤ÇÐ»ý','990414-2233547');
-EXEC PRC_ST_C('Á¶ÇÐ»ý','991124-1155111');
+EXEC PRC_ST_C('ê¹€í•™ìƒ','000904-3123456');
+EXEC PRC_ST_C('ìœ í•™ìƒ','010101-4123456');
+EXEC PRC_ST_C('ë°•í•™ìƒ','970202-1123456');
+EXEC PRC_ST_C('ìµœí•™ìƒ','940515-1145677');
+EXEC PRC_ST_C('ì •í•™ìƒ','990414-2233547');
+EXEC PRC_ST_C('ì¡°í•™ìƒ','991124-1155111');
 
---¡Ø DEFAULT ³¯Â¥ ¼öÁ¤ UPDATE
+--â€» DEFAULT ë‚ ì§œ ìˆ˜ì • UPDATE
 UPDATE STUD SET ST_DATE = TO_DATE('2024-01-15','YYYY-MM-DD') WHERE ST_ID = 'ST100';
 UPDATE STUD SET ST_DATE = TO_DATE('2024-01-16','YYYY-MM-DD') WHERE ST_ID = 'ST101';
 UPDATE STUD SET ST_DATE = TO_DATE('2024-01-17','YYYY-MM-DD') WHERE ST_ID = 'ST102';
@@ -2524,21 +2524,21 @@ UPDATE STUD SET ST_DATE = TO_DATE('2025-01-07','YYYY-MM-DD') WHERE ST_ID = 'ST11
 SELECT * FROM STUD;
 --==>>
 /*
-ST100	3123456	±èÇÐ»ý	000904-3123456	2024-01-15
-ST101	4123456	À¯ÇÐ»ý	010101-4123456	2024-01-16
-ST102	1123456	¹ÚÇÐ»ý	970202-1123456	2024-01-17
-ST103	1145677	ÃÖÇÐ»ý	940515-1145677	2025-01-05
-ST104	2233547	Á¤ÇÐ»ý	990414-2233547	2025-01-06
-ST105	1155111	Á¶ÇÐ»ý	991124-1155111	2025-01-07
+ST100	3123456	ê¹€í•™ìƒ	000904-3123456	2024-01-15
+ST101	4123456	ìœ í•™ìƒ	010101-4123456	2024-01-16
+ST102	1123456	ë°•í•™ìƒ	970202-1123456	2024-01-17
+ST103	1145677	ìµœí•™ìƒ	940515-1145677	2025-01-05
+ST104	2233547	ì •í•™ìƒ	990414-2233547	2025-01-06
+ST105	1155111	ì¡°í•™ìƒ	991124-1155111	2025-01-07
 */
 
--- 9. ADMIN (°ü¸®ÀÚ)
+-- 9. ADMIN (ê´€ë¦¬ìž)
 -- EXEC PRC_AD_C(AD_NAME, AD_SSN, AR_CODE)
-EXEC PRC_AD_C('Á¶°ü¸®','790102-2777777','AR001');
-EXEC PRC_AD_C('±è°ü¸®','751010-1122333','AR002');
-EXEC PRC_AD_C('ÀÌ°ü¸®','890810-1552147','AR002');
+EXEC PRC_AD_C('ì¡°ê´€ë¦¬','790102-2777777','AR001');
+EXEC PRC_AD_C('ê¹€ê´€ë¦¬','751010-1122333','AR002');
+EXEC PRC_AD_C('ì´ê´€ë¦¬','890810-1552147','AR002');
 
---¡Ø DEFAULT ³¯Â¥ ¼öÁ¤ UPDATE
+--â€» DEFAULT ë‚ ì§œ ìˆ˜ì • UPDATE
 UPDATE ADMIN SET AD_DATE = TO_DATE('2023-01-01','YYYY-MM-DD') WHERE AD_ID = 'AD100';
 UPDATE ADMIN SET AD_DATE = TO_DATE('2023-01-02','YYYY-MM-DD') WHERE AD_ID = 'AD101';
 UPDATE ADMIN SET AD_DATE = TO_DATE('2024-01-03','YYYY-MM-DD') WHERE AD_ID = 'AD102';
@@ -2550,21 +2550,21 @@ UPDATE ADMIN SET AD_DATE = TO_DATE('2024-01-03','YYYY-MM-DD') WHERE AD_ID = 'AD1
 SELECT * FROM ADMIN;
 --==>>
 /*
-AD100                2777777              Á¶°ü¸®               790102-2777777 2023-01-01 AR001     
-AD101                1122333              ±è°ü¸®               751010-1122333 2023-01-02 AR002     
-AD102                1552147              ÀÌ°ü¸®               890810-1552147 2024-01-03 AR002     
+AD100                2777777              ì¡°ê´€ë¦¬               790102-2777777 2023-01-01 AR001     
+AD101                1122333              ê¹€ê´€ë¦¬               751010-1122333 2023-01-02 AR002     
+AD102                1552147              ì´ê´€ë¦¬               890810-1552147 2024-01-03 AR002     
 */
 
 
 
--- 10. OPEN_COURSE (°³¼³°úÁ¤)
+-- 10. OPEN_COURSE (ê°œì„¤ê³¼ì •)
 -- EXEC PRC_OC_C(CR_CODE, OC_SDATE, OC_EDATE, CL_CODE)
 EXEC PRC_OC_C('CR001', TO_DATE('2024-09-01','YYYY-MM-DD'), TO_DATE('2025-02-28','YYYY-MM-DD'), 'CL001');
 EXEC PRC_OC_C('CR002', TO_DATE('2025-09-01','YYYY-MM-DD'), TO_DATE('2026-02-28','YYYY-MM-DD'), 'CL002');
 EXEC PRC_OC_C('CR003', TO_DATE('2026-03-01','YYYY-MM-DD'), TO_DATE('2026-08-31','YYYY-MM-DD'), 'CL003');
 
 
---¡Ø DEFAULT ³¯Â¥ ¼öÁ¤ UPDATE
+--â€» DEFAULT ë‚ ì§œ ìˆ˜ì • UPDATE
 UPDATE OPEN_COURSE SET OC_DATE = TO_DATE('2024-08-10','YYYY-MM-DD') WHERE OC_CODE = 'OC001';
 UPDATE OPEN_COURSE SET OC_DATE = TO_DATE('2025-08-10','YYYY-MM-DD') WHERE OC_CODE = 'OC002';
 UPDATE OPEN_COURSE SET OC_DATE = TO_DATE('2026-02-01','YYYY-MM-DD') WHERE OC_CODE = 'OC003';
@@ -2584,7 +2584,7 @@ OC003	CR003	2026-03-01	2026-08-31	CL003	2026-02-01
 
 
 
--- 11. OPEN_SUB (°³¼³°ú¸ñ)
+-- 11. OPEN_SUB (ê°œì„¤ê³¼ëª©)
 -- EXEC PRC_OS_C(OC_CODE, PF_ID, SUB_CODE, OS_SDATE, OS_EDATE, TB_CODE)
 
 EXEC PRC_OS_C('OC001','PF101','SUB001', TO_DATE('2024-09-01','YYYY-MM-DD'), TO_DATE('2024-10-31','YYYY-MM-DD'), 'TB001');
@@ -2606,7 +2606,7 @@ EXEC PRC_OS_C('OC003','PF102','SUB005', TO_DATE('2026-05-01','YYYY-MM-DD'), TO_D
 EXEC PRC_OS_C('OC003','PF100','SUB006', TO_DATE('2026-07-01','YYYY-MM-DD'), TO_DATE('2026-08-31','YYYY-MM-DD'), 'TB006');
 
 
---¡Ø DEFAULT ³¯Â¥ ¼öÁ¤ UPDATE
+--â€» DEFAULT ë‚ ì§œ ìˆ˜ì • UPDATE
 UPDATE OPEN_SUB SET OS_DATE = TO_DATE('2024-08-10','YYYY-MM-DD') WHERE OC_CODE = 'OC001';
 UPDATE OPEN_SUB SET OS_DATE = TO_DATE('2025-08-10','YYYY-MM-DD') WHERE OC_CODE = 'OC002';
 UPDATE OPEN_SUB SET OS_DATE = TO_DATE('2026-02-01','YYYY-MM-DD') WHERE OC_CODE = 'OC003';
@@ -2627,9 +2627,9 @@ OS010	OC003	PF100	SUB006	2026-07-01	2026-08-31	TB006				2026-02-01
 
 
 
--- 12. ENROLLMENT (¼ö°­½ÅÃ»)
+-- 12. ENROLLMENT (ìˆ˜ê°•ì‹ ì²­)
 
--- °ú°Å ¼ö°­ ÀÌ·ÂÀº INSERTÄõ¸®·Î ¹Ù·Î »ðÀÔ
+-- ê³¼ê±° ìˆ˜ê°• ì´ë ¥ì€ INSERTì¿¼ë¦¬ë¡œ ë°”ë¡œ ì‚½ìž…
 INSERT INTO ENROLLMENT VALUES ('ER001','OC001','ST100',TO_DATE('2024-08-20','YYYY-MM-DD'));
 INSERT INTO ENROLLMENT VALUES ('ER002','OC001','ST101',TO_DATE('2024-08-21','YYYY-MM-DD'));
 INSERT INTO ENROLLMENT VALUES ('ER003','OC001','ST102',TO_DATE('2024-08-22','YYYY-MM-DD'));
@@ -2658,7 +2658,7 @@ ER008	OC003	ST101	2026-01-28
 ER009	OC003	ST102	2026-01-28
 */
 
--- 13. GRADE (¼ºÀû)
+-- 13. GRADE (ì„±ì )
 -- EXEC PRC_GR_C_AD(LOGIN_ID, ER_CODE, OS_CODE, ATT_SOCRE, WRT_SCORE, PRC_SCORE)
 EXEC PRC_GR_C_AD('AD102','ER001','OS002',18,24,41);
 EXEC PRC_GR_C_AD('AD102','ER002','OS002',20,26,45);
@@ -2705,9 +2705,9 @@ GR007   ER004   OS006   27   22   34   2026-01-02
 GR008   ER005   OS006   30   20   35   2026-01-02
 GR009   ER006   OS006   24   25   33   2026-01-29
 */
--- 14. DROP_OUT (ÁßµµÅ»¶ô)
+-- 14. DROP_OUT (ì¤‘ë„íƒˆë½)
 
--- °ú°Å ÀÌ·ÂÀº INSERT Äõ¸®·Î »ðÀÔ
+-- ê³¼ê±° ì´ë ¥ì€ INSERT ì¿¼ë¦¬ë¡œ ì‚½ìž…
 INSERT INTO DROP_OUT (DO_CODE, ER_CODE, DO_DATE, DR_CODE)
 VALUES ('DO001','ER001',TO_DATE('2024-11-15','YYYY-MM-DD'),'DR001');
 INSERT INTO DROP_OUT (DO_CODE, ER_CODE, DO_DATE, DR_CODE)
@@ -2725,21 +2725,21 @@ DO002	ER002	2025-01-15	DR002
 DO003	ER004	2026-01-20	DR003
 */
 -------------------------------------------------------------------------
--- °ü¸®ÀÚ¿ë - ±³¼öÀÚ ¹èÁ¤ ÇöÈ² ºä
+-- ê´€ë¦¬ìžìš© - êµìˆ˜ìž ë°°ì • í˜„í™© ë·°
 CREATE OR REPLACE VIEW VIEW_ADMIN_PROF_LIST AS
 SELECT
      P.PF_ID
-    ,P.PF_NAME AS ±³¼öÀÚ¸í
-    ,S.SUB_NAME AS °ú¸ñ¸í
-    ,OS.OS_SDATE AS ½ÃÀÛÀÏ½Ã
-    ,OS.OS_EDATE AS Á¾·áÀÏ½Ã
-    ,T.TB_NAME AS ±³Àç¸í
-    ,C.CL_NAME AS °­ÀÇ½Ç
+    ,P.PF_NAME AS êµìˆ˜ìžëª…
+    ,S.SUB_NAME AS ê³¼ëª©ëª…
+    ,OS.OS_SDATE AS ì‹œìž‘ì¼ì‹œ
+    ,OS.OS_EDATE AS ì¢…ë£Œì¼ì‹œ
+    ,T.TB_NAME AS êµìž¬ëª…
+    ,C.CL_NAME AS ê°•ì˜ì‹¤
     ,CASE
-     WHEN SYSDATE < OS.OS_SDATE THEN '°­ÀÇ ¿¹Á¤'
-     WHEN SYSDATE BETWEEN OS.OS_SDATE AND OS.OS_EDATE THEN '°­ÀÇ Áß'
-     ELSE '°­ÀÇ Á¾·á'
-     END AS °­ÀÇÁøÇà¿©ºÎ
+     WHEN SYSDATE < OS.OS_SDATE THEN 'ê°•ì˜ ì˜ˆì •'
+     WHEN SYSDATE BETWEEN OS.OS_SDATE AND OS.OS_EDATE THEN 'ê°•ì˜ ì¤‘'
+     ELSE 'ê°•ì˜ ì¢…ë£Œ'
+     END AS ê°•ì˜ì§„í–‰ì—¬ë¶€
 FROM PROF P
 LEFT JOIN OPEN_SUB OS ON P.PF_ID = OS.PF_ID
 LEFT JOIN SUB S ON OS.SUB_CODE = S.SUB_CODE
@@ -2747,17 +2747,17 @@ LEFT JOIN TEXTBOOK T ON OS.TB_CODE = T.TB_CODE
 LEFT JOIN OPEN_COURSE OC ON OS.OC_CODE = OC.OC_CODE
 LEFT JOIN CLASS C ON OC.CL_CODE = C.CL_CODE;
 
--- °ü¸®ÀÚ¿ë - °úÁ¤ »ó¼¼ Á¤º¸ ºä
+-- ê´€ë¦¬ìžìš© - ê³¼ì • ìƒì„¸ ì •ë³´ ë·°
 CREATE OR REPLACE VIEW VIEW_ADMIN_COURSE_LIST AS
 SELECT
      CR.CR_CODE
-    ,CR.CR_NAME AS °úÁ¤¸í
-    ,CL.CL_NAME AS °­ÀÇ½Ç
-    ,S.SUB_NAME AS °ú¸ñ¸í
-    ,OS.OS_SDATE AS ½ÃÀÛÀÏ½Ã
-    ,OS.OS_EDATE AS Á¾·áÀÏ½Ã
-    ,T.TB_NAME AS ±³Àç¸í
-    ,P.PF_NAME AS ±³¼öÀÚ¸í
+    ,CR.CR_NAME AS ê³¼ì •ëª…
+    ,CL.CL_NAME AS ê°•ì˜ì‹¤
+    ,S.SUB_NAME AS ê³¼ëª©ëª…
+    ,OS.OS_SDATE AS ì‹œìž‘ì¼ì‹œ
+    ,OS.OS_EDATE AS ì¢…ë£Œì¼ì‹œ
+    ,T.TB_NAME AS êµìž¬ëª…
+    ,P.PF_NAME AS êµìˆ˜ìžëª…
 FROM COURSE CR
 LEFT JOIN OPEN_COURSE OC ON CR.CR_CODE = OC.CR_CODE
 LEFT JOIN CLASS CL ON OC.CL_CODE = CL.CL_CODE
@@ -2767,20 +2767,20 @@ LEFT JOIN TEXTBOOK T ON OS.TB_CODE = T.TB_CODE
 LEFT JOIN PROF P ON OS.PF_ID = P.PF_ID;
 
 
--- °ü¸®ÀÚ¿ë - °ú¸ñ »ó¼¼ Á¤º¸ ºä
+-- ê´€ë¦¬ìžìš© - ê³¼ëª© ìƒì„¸ ì •ë³´ ë·°
 CREATE OR REPLACE VIEW VIEW_ADMIN_SUBJECT_LIST AS
 SELECT
      OS.OS_CODE
-    ,CR.CR_NAME AS °úÁ¤¸í
-    ,CL.CL_NAME AS °­ÀÇ½Ç
-    ,S.SUB_NAME AS °ú¸ñ¸í
-    ,OS.OS_SDATE AS ½ÃÀÛÀÏ½Ã
-    ,OS.OS_EDATE AS Á¾·áÀÏ½Ã
-    ,T.TB_NAME AS ±³Àç¸í
-    ,P.PF_NAME AS ±³¼öÀÚ¸í
-    ,OS.ATT_WEIGHT AS Ãâ°á¹èÁ¡
-    ,OS.WRT_WEIGHT AS ÇÊ±â¹èÁ¡
-    ,OS.PRC_WEIGHT AS ½Ç±â¹èÁ¡
+    ,CR.CR_NAME AS ê³¼ì •ëª…
+    ,CL.CL_NAME AS ê°•ì˜ì‹¤
+    ,S.SUB_NAME AS ê³¼ëª©ëª…
+    ,OS.OS_SDATE AS ì‹œìž‘ì¼ì‹œ
+    ,OS.OS_EDATE AS ì¢…ë£Œì¼ì‹œ
+    ,T.TB_NAME AS êµìž¬ëª…
+    ,P.PF_NAME AS êµìˆ˜ìžëª…
+    ,OS.ATT_WEIGHT AS ì¶œê²°ë°°ì 
+    ,OS.WRT_WEIGHT AS í•„ê¸°ë°°ì 
+    ,OS.PRC_WEIGHT AS ì‹¤ê¸°ë°°ì 
 FROM OPEN_SUB OS
 JOIN OPEN_COURSE OC ON OS.OC_CODE = OC.OC_CODE
 JOIN COURSE CR ON OC.CR_CODE = CR.CR_CODE
@@ -2790,20 +2790,20 @@ LEFT JOIN TEXTBOOK T ON OS.TB_CODE = T.TB_CODE
 LEFT JOIN PROF P ON OS.PF_ID = P.PF_ID;
 
 
--- °ü¸®ÀÚ¿ë - ÇÐ»ý ¸ñ·Ï ¹× ÁßµµÅ»¶ô »óÅÂ ºä
+-- ê´€ë¦¬ìžìš© - í•™ìƒ ëª©ë¡ ë° ì¤‘ë„íƒˆë½ ìƒíƒœ ë·°
 CREATE OR REPLACE VIEW VIEW_ADMIN_STUDENT_LIST AS
 SELECT
      ST.ST_ID
-    ,ST.ST_NAME AS ÇÐ»ýÀÌ¸§
-    ,CR.CR_NAME AS °úÁ¤¸í
-    ,S.SUB_NAME AS ¼ö°­°ú¸ñ
-    ,NVL(GR.ATT_SCORE, 0) + NVL(GR.WRT_SCORE, 0) + NVL(GR.PRC_SCORE, 0) AS ÃÑÁ¡
+    ,ST.ST_NAME AS í•™ìƒì´ë¦„
+    ,CR.CR_NAME AS ê³¼ì •ëª…
+    ,S.SUB_NAME AS ìˆ˜ê°•ê³¼ëª©
+    ,NVL(GR.ATT_SCORE, 0) + NVL(GR.WRT_SCORE, 0) + NVL(GR.PRC_SCORE, 0) AS ì´ì 
     ,CASE 
      WHEN DO.DO_CODE IS NOT NULL 
      THEN 'Y' 
      ELSE 'N' 
-     END AS ÁßµµÅ»¶ô¿©ºÎ
-    ,DR.DR_REASON AS Å»¶ô»çÀ¯
+     END AS ì¤‘ë„íƒˆë½ì—¬ë¶€
+    ,DR.DR_REASON AS íƒˆë½ì‚¬ìœ 
 FROM STUD ST
 LEFT JOIN ENROLLMENT ER ON ST.ST_ID = ER.ST_ID
 LEFT JOIN OPEN_COURSE OC ON ER.OC_CODE = OC.OC_CODE
@@ -2814,25 +2814,25 @@ LEFT JOIN GRADE GR ON ER.ER_CODE = GR.ER_CODE AND OS.OS_CODE = GR.OS_CODE
 LEFT JOIN DROP_OUT DO ON ER.ER_CODE = DO.ER_CODE
 LEFT JOIN DROP_REASON DR ON DO.DR_CODE = DR.DR_CODE;
 
--- ±³¼öÀÚ¿ë - °­ÀÇ °ú¸ñ ¸ñ·Ï ºä
+-- êµìˆ˜ìžìš© - ê°•ì˜ ê³¼ëª© ëª©ë¡ ë·°
 CREATE OR REPLACE VIEW VIEW_PROF_SUBJECT_LIST AS
 SELECT
     OS.PF_ID,
     OS.OS_CODE,
-    S.SUB_NAME AS °ú¸ñ¸í,
-    OS.OS_SDATE AS ½ÃÀÛÀÏ½Ã,
-    OS.OS_EDATE AS Á¾·áÀÏ½Ã,
-    T.TB_NAME AS ±³Àç¸í,
-    CR.CR_NAME AS °úÁ¤¸í,
-    C.CL_NAME AS °­ÀÇ½Ç,
-    OS.ATT_WEIGHT AS Ãâ°á¹èÁ¡,
-    OS.WRT_WEIGHT AS ÇÊ±â¹èÁ¡,
-    OS.PRC_WEIGHT AS ½Ç±â¹èÁ¡,
+    S.SUB_NAME AS ê³¼ëª©ëª…,
+    OS.OS_SDATE AS ì‹œìž‘ì¼ì‹œ,
+    OS.OS_EDATE AS ì¢…ë£Œì¼ì‹œ,
+    T.TB_NAME AS êµìž¬ëª…,
+    CR.CR_NAME AS ê³¼ì •ëª…,
+    C.CL_NAME AS ê°•ì˜ì‹¤,
+    OS.ATT_WEIGHT AS ì¶œê²°ë°°ì ,
+    OS.WRT_WEIGHT AS í•„ê¸°ë°°ì ,
+    OS.PRC_WEIGHT AS ì‹¤ê¸°ë°°ì ,
     CASE
-        WHEN SYSDATE < OS.OS_SDATE THEN '°­ÀÇ ¿¹Á¤'
-        WHEN SYSDATE BETWEEN OS.OS_SDATE AND OS.OS_EDATE THEN '°­ÀÇ Áß'
-        ELSE '°­ÀÇ Á¾·á'
-    END AS °­ÀÇÁøÇà¿©ºÎ
+        WHEN SYSDATE < OS.OS_SDATE THEN 'ê°•ì˜ ì˜ˆì •'
+        WHEN SYSDATE BETWEEN OS.OS_SDATE AND OS.OS_EDATE THEN 'ê°•ì˜ ì¤‘'
+        ELSE 'ê°•ì˜ ì¢…ë£Œ'
+    END AS ê°•ì˜ì§„í–‰ì—¬ë¶€
 FROM OPEN_SUB OS
 JOIN SUB S ON OS.SUB_CODE = S.SUB_CODE
 JOIN TEXTBOOK T ON OS.TB_CODE = T.TB_CODE
@@ -2841,22 +2841,22 @@ JOIN COURSE CR ON OC.CR_CODE = CR.CR_CODE
 JOIN CLASS C ON OC.CL_CODE = C.CL_CODE;
 
 
--- ±³¼öÀÚ¿ë - ¼ºÀû ÀÔ·Â ´ë»ó ÇÐ»ý ¸ñ·Ï ºä
+-- êµìˆ˜ìžìš© - ì„±ì  ìž…ë ¥ ëŒ€ìƒ í•™ìƒ ëª©ë¡ ë·°
 CREATE OR REPLACE VIEW VIEW_PROF_SCORE_INPUT AS
 SELECT
      OS.PF_ID
     ,OS.OS_CODE
-    ,S.SUB_NAME AS °ú¸ñ¸í
+    ,S.SUB_NAME AS ê³¼ëª©ëª…
     ,ST.ST_ID
-    ,ST.ST_NAME AS ÇÐ»ý¸í
+    ,ST.ST_NAME AS í•™ìƒëª…
     ,ER.ER_CODE
     ,GR.GR_CODE
-    ,NVL(GR.ATT_SCORE, 0) AS Ãâ°áÁ¡¼ö
-    ,NVL(GR.WRT_SCORE, 0) AS ÇÊ±âÁ¡¼ö
-    ,NVL(GR.PRC_SCORE, 0) AS ½Ç±âÁ¡¼ö
-    ,OS.ATT_WEIGHT AS Ãâ°á¹èÁ¡
-    ,OS.WRT_WEIGHT AS ÇÊ±â¹èÁ¡
-    ,OS.PRC_WEIGHT AS ½Ç±â¹èÁ¡
+    ,NVL(GR.ATT_SCORE, 0) AS ì¶œê²°ì ìˆ˜
+    ,NVL(GR.WRT_SCORE, 0) AS í•„ê¸°ì ìˆ˜
+    ,NVL(GR.PRC_SCORE, 0) AS ì‹¤ê¸°ì ìˆ˜
+    ,OS.ATT_WEIGHT AS ì¶œê²°ë°°ì 
+    ,OS.WRT_WEIGHT AS í•„ê¸°ë°°ì 
+    ,OS.PRC_WEIGHT AS ì‹¤ê¸°ë°°ì 
 FROM OPEN_SUB OS
 JOIN SUB S ON OS.SUB_CODE = S.SUB_CODE
 JOIN OPEN_COURSE OC ON OS.OC_CODE = OC.OC_CODE
@@ -2869,32 +2869,32 @@ WHERE DO.DO_CODE IS NULL;
 select *
 from VIEW_PROF_SCORE_INPUT;
 
--- ±³¼öÀÚ¿ë - °ú¸ñº° ¼ºÀû ¹× µî¼ö Ãâ·Â ºä
+-- êµìˆ˜ìžìš© - ê³¼ëª©ë³„ ì„±ì  ë° ë“±ìˆ˜ ì¶œë ¥ ë·°
 CREATE OR REPLACE VIEW VIEW_PROF_SCORE_OUTPUT AS
 SELECT
      OS.PF_ID
     ,OS.OS_CODE
-    ,S.SUB_NAME AS °ú¸ñ¸í
-    ,OS.OS_SDATE AS ½ÃÀÛÀÏ½Ã
-    ,OS.OS_EDATE AS Á¾·áÀÏ½Ã
-    ,T.TB_NAME AS ±³Àç¸í
+    ,S.SUB_NAME AS ê³¼ëª©ëª…
+    ,OS.OS_SDATE AS ì‹œìž‘ì¼ì‹œ
+    ,OS.OS_EDATE AS ì¢…ë£Œì¼ì‹œ
+    ,T.TB_NAME AS êµìž¬ëª…
     ,ST.ST_ID
-    ,ST.ST_NAME AS ÇÐ»ý¸í
-    ,NVL(GR.ATT_SCORE, 0) AS Ãâ°á
-    ,NVL(GR.WRT_SCORE, 0) AS ÇÊ±â
-    ,NVL(GR.PRC_SCORE, 0) AS ½Ç±â
-    ,NVL(GR.ATT_SCORE, 0) + NVL(GR.WRT_SCORE, 0) + NVL(GR.PRC_SCORE, 0) AS ÃÑÁ¡
+    ,ST.ST_NAME AS í•™ìƒëª…
+    ,NVL(GR.ATT_SCORE, 0) AS ì¶œê²°
+    ,NVL(GR.WRT_SCORE, 0) AS í•„ê¸°
+    ,NVL(GR.PRC_SCORE, 0) AS ì‹¤ê¸°
+    ,NVL(GR.ATT_SCORE, 0) + NVL(GR.WRT_SCORE, 0) + NVL(GR.PRC_SCORE, 0) AS ì´ì 
     ,RANK() OVER 
       (
         PARTITION BY OS.OS_CODE
         ORDER BY NVL(GR.ATT_SCORE, 0) + NVL(GR.WRT_SCORE, 0) + NVL(GR.PRC_SCORE, 0) DESC
-      ) AS µî¼ö
+      ) AS ë“±ìˆ˜
     ,CASE 
      WHEN DO.DO_CODE IS NOT NULL 
      THEN 'Y' 
      ELSE 'N' 
-     END AS ÁßµµÅ»¶ô¿©ºÎ
-    ,DR.DR_REASON AS Å»¶ô»çÀ¯
+     END AS ì¤‘ë„íƒˆë½ì—¬ë¶€
+    ,DR.DR_REASON AS íƒˆë½ì‚¬ìœ 
 FROM OPEN_SUB OS
 JOIN SUB S ON OS.SUB_CODE = S.SUB_CODE
 JOIN TEXTBOOK T ON OS.TB_CODE = T.TB_CODE
@@ -2910,49 +2910,49 @@ select *
 from VIEW_PROF_SCORE_OUTPUT;
 
 
--- ÇÐ»ý¿ë - ¼ö°­ °ú¸ñ ¸ñ·Ï ºä
+-- í•™ìƒìš© - ìˆ˜ê°• ê³¼ëª© ëª©ë¡ ë·°
 CREATE OR REPLACE VIEW VIEW_STUDENT_SUBJECT_LIST AS
 SELECT
      ST.ST_ID
     ,OS.OS_CODE
-    ,S.SUB_NAME AS °ú¸ñ¸í
-    ,OS.OS_SDATE AS ½ÃÀÛÀÏ½Ã
-    ,OS.OS_EDATE AS Á¾·áÀÏ½Ã
+    ,S.SUB_NAME AS ê³¼ëª©ëª…
+    ,OS.OS_SDATE AS ì‹œìž‘ì¼ì‹œ
+    ,OS.OS_EDATE AS ì¢…ë£Œì¼ì‹œ
     ,CASE
      WHEN OS.OS_EDATE < SYSDATE THEN 'Y'
      ELSE 'N'
-     END AS ¼ö°­¿Ï·á¿©ºÎ
+     END AS ìˆ˜ê°•ì™„ë£Œì—¬ë¶€
 FROM STUD ST
 JOIN ENROLLMENT ER ON ST.ST_ID = ER.ST_ID
 JOIN OPEN_COURSE OC ON ER.OC_CODE = OC.OC_CODE
 JOIN OPEN_SUB OS ON OC.OC_CODE = OS.OC_CODE
 JOIN SUB S ON OS.SUB_CODE = S.SUB_CODE;
 
--- ÇÐ»ý¿ë - ¼ºÀû Á¶È¸ ºä (ÅëÇÕ)
+-- í•™ìƒìš© - ì„±ì  ì¡°íšŒ ë·° (í†µí•©)
 CREATE OR REPLACE VIEW VIEW_STUDENT_SCORE AS
 SELECT
      ST.ST_ID
-    ,ST.ST_NAME AS ÇÐ»ýÀÌ¸§
-    ,CR.CR_NAME AS °úÁ¤¸í
-    ,S.SUB_NAME AS °ú¸ñ¸í
-    ,OS.OS_SDATE AS ½ÃÀÛÀÏ½Ã
-    ,OS.OS_EDATE AS Á¾·áÀÏ½Ã
-    ,T.TB_NAME AS ±³Àç¸í
-    ,(NVL(GR.ATT_SCORE, 0)*(os.ATT_WEIGHT/100)) AS Ãâ°á
-    ,(NVL(GR.WRT_SCORE, 0)*(os.WRT_WEIGHT/100)) AS ÇÊ±â
-    ,(NVL(GR.PRC_SCORE, 0)*(OS.PRC_WEIGHT/100)) AS ½Ç±â
-    ,(NVL(GR.ATT_SCORE, 0)*(os.ATT_WEIGHT/100)) +(NVL(GR.WRT_SCORE, 0)*(os.WRT_WEIGHT/100)) + (NVL(GR.PRC_SCORE, 0)*(OS.PRC_WEIGHT/100)) AS ÃÑÁ¡
+    ,ST.ST_NAME AS í•™ìƒì´ë¦„
+    ,CR.CR_NAME AS ê³¼ì •ëª…
+    ,S.SUB_NAME AS ê³¼ëª©ëª…
+    ,OS.OS_SDATE AS ì‹œìž‘ì¼ì‹œ
+    ,OS.OS_EDATE AS ì¢…ë£Œì¼ì‹œ
+    ,T.TB_NAME AS êµìž¬ëª…
+    ,(NVL(GR.ATT_SCORE, 0)*(os.ATT_WEIGHT/100)) AS ì¶œê²°
+    ,(NVL(GR.WRT_SCORE, 0)*(os.WRT_WEIGHT/100)) AS í•„ê¸°
+    ,(NVL(GR.PRC_SCORE, 0)*(OS.PRC_WEIGHT/100)) AS ì‹¤ê¸°
+    ,(NVL(GR.ATT_SCORE, 0)*(os.ATT_WEIGHT/100)) +(NVL(GR.WRT_SCORE, 0)*(os.WRT_WEIGHT/100)) + (NVL(GR.PRC_SCORE, 0)*(OS.PRC_WEIGHT/100)) AS ì´ì 
     ,RANK() OVER 
     (
         PARTITION BY OS.OS_CODE
         ORDER BY NVL(GR.ATT_SCORE, 0) + NVL(GR.WRT_SCORE, 0) + NVL(GR.PRC_SCORE, 0) DESC
-    ) AS µî¼ö
+    ) AS ë“±ìˆ˜
     ,CASE 
      WHEN DO.DO_CODE IS NOT NULL 
      THEN 'Y' 
      ELSE 'N' 
-     END AS ÁßµµÅ»¶ô¿©ºÎ
-    ,DR.DR_REASON AS Å»¶ô»çÀ¯
+     END AS ì¤‘ë„íƒˆë½ì—¬ë¶€
+    ,DR.DR_REASON AS íƒˆë½ì‚¬ìœ 
 FROM STUD ST
 JOIN ENROLLMENT ER ON ST.ST_ID = ER.ST_ID
 JOIN OPEN_COURSE OC ON ER.OC_CODE = OC.OC_CODE
