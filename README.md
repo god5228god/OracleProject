@@ -6,7 +6,8 @@
    ORACLE DataBase
    SQL, PL/SQL
 ## ERD
-![ERD](./docs/erd.png)
+![ERD](https://raw.githubusercontent.com/god5228god/OracleProject/master/docs/erd.png)
+
 
 ## 핵심 설계 포인트
    요구분석서 기반 ERD 설계
