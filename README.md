@@ -6,7 +6,7 @@
    ORACLE DataBase
    SQL, PL/SQL
 ## ERD
-![ERD](docs/erd.png)
+![ERD](./docs/erd.png)
 
 ## 핵심 설계 포인트
    요구분석서 기반 ERD 설계
