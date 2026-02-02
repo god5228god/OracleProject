@@ -16,4 +16,3 @@
    VIEW를 이용한 출력(성적 환산 등) 처리
 
 ## 발표 자료
-- [발표 PPT](./docs/presentation.pptx)
