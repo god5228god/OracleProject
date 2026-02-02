@@ -5,17 +5,15 @@
 2. 사용 기술
    ORACLE DataBase
    SQL, PL/SQL
-3. ERD
 ## ERD
 ![ERD](./docs/erd.png)
 
-4. 핵심 설계 포인트
+3. 핵심 설계 포인트
    요구분석서 기반 ERD 설계
    N:M 관계를 매핑테이블로 분리
    역할별 권한 분리
    프로시저를 통한 입력 검증 및 예외 처리
    VIEW를 이용한 출력(성적 환산 등) 처리
 
-5. 발표 자료
 ## 발표 자료
 - [발표 PPT](./docs/presentation.pptx)
